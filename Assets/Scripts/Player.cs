@@ -91,4 +91,14 @@ public class Player : MonoBehaviour
 
         return _playerViews[_playerViews.Count - 1].PlayerData.Damage;
     }
+
+    private void Die()
+    {
+
+    }
+
+    private void DieCorutine()
+    {
+
+    }
 }

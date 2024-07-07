@@ -4,27 +4,28 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private EnemyData _enemyData;
+    [SerializeField] protected EnemyData _enemyData;
     [SerializeField] private GameObject _visual;
     [SerializeField] private Collider _collider;
+    [SerializeField] protected Animator animator;
 
     private Health _health;
     WaitForSeconds _regenerate;
     public int Exp => _enemyData.Exp;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         _health = GetComponent<Health>();
         _regenerate = new WaitForSeconds(_enemyData.TimeRegenerate);
         _health.Init(_enemyData.Health, _enemyData.Health);
     }
 
-    public void OnEnable()
+    protected virtual void OnEnable()
     {
         _health.NoHealth += OnNoHealth;
     }
 
-    private void OnDisable()
+    protected virtual void OnDisable()
     {
         _health.NoHealth -= OnNoHealth;
     }

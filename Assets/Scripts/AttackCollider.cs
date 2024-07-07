@@ -33,6 +33,7 @@ public class AttackCollider : MonoBehaviour
                 health.NoHealth += OnEnemyDie;
                 EnemyFind = true;
             }
+
             health.RemoveHealth(_damage);
 
             if (EnemyFind == true)
