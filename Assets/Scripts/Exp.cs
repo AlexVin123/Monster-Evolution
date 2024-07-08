@@ -16,6 +16,7 @@ public class Exp : MonoBehaviour
     public event UnityAction<int, int> ChaigeExp;
 
     public int CurrentLvl => _currentLvl;
+    public int CurrentExp => _currentExp;
 
     public void Init(List<PlayerView> players)
     {
@@ -46,6 +47,16 @@ public class Exp : MonoBehaviour
             NextLvl();
         }
 
+        PlayerPrefs.SetInt("Exp", _currentExp);
+        ChaigeExp?.Invoke(_maxExp, _currentExp);
+    }
+
+    public void RemoveExp(int exp)
+    {
+        if (exp < 0)
+            Debug.LogError("Получаемый опыт меньше 0");
+
+        _currentExp -= exp;
         PlayerPrefs.SetInt("Exp", _currentExp);
         ChaigeExp?.Invoke(_maxExp, _currentExp);
     }
