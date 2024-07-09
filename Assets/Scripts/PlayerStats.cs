@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Runtime.CompilerServices;
+using YaAssets;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -58,7 +59,7 @@ public class PlayerStats : MonoBehaviour
         {
             if (player.Lvl == lvl)
             {
-                _lvl.text = "lvl" + player.Lvl;
+                _lvl.text = Localization.GetText("Level") + player.Lvl;
                 _name.text = player.Name;
             }
         }

@@ -14,16 +14,32 @@ namespace YaAssets
             {
                 _translations = new()
                 {
-                    { "Level", "Level" },
+                    { "Level", "Lvl: " },
                     { "NEXT", "NEXT" },
                     { "PLAY", "PLAY" },
                     { "SETTINGS", "SETTINGS" },
                     { "CLAIM", "CLAIM" },
                     { "LOADING...", "LOADING..." },
                     { "CONTINUE", "CONTINUE" },
+                    { "BoostX2", "Exp X2 5 min" },
                 };
             }
-            else if (YandexGame.EnvironmentData.language == "tr")
+            else
+            {
+                _translations = new()
+                {
+                    { "Level", "Ур: " },
+                    { "NEXT", "ДАЛЬШЕ" },
+                    { "PLAY", "ИГРАТЬ" },
+                    { "SETTINGS", "НАСТРОЙКИ" },
+                    { "CLAIM", "ЗАБРАТЬ" },
+                    { "LOADING...", "ЗАГРУЗКА..." },
+                    { "CONTINUE", "ПРОДОЛЖИТЬ" },
+                    { "BoostX2", "Опыт X2 5 мин" },
+                };
+            }
+            
+            /*else if (YandexGame.EnvironmentData.language == "tr")
             {
                 _translations = new()
                 {
@@ -35,20 +51,7 @@ namespace YaAssets
                     { "Music", "Müzik" },
                     { "Push", "İTMEK" },
                 };
-            }
-            else
-            {
-                _translations = new()
-                {
-                    { "Level", "Уровень" },
-                    { "NEXT", "ДАЛЬШЕ" },
-                    { "PLAY", "ИГРАТЬ" },
-                    { "SETTINGS", "НАСТРОЙКИ" },
-                    { "CLAIM", "ЗАБРАТЬ" },
-                    { "LOADING...", "ЗАГРУЗКА..." },
-                    { "CONTINUE", "ПРОДОЛЖИТЬ" },
-                };
-            }
+            }*/
         }
 
         public static string GetText(string key)
