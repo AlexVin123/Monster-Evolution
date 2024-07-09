@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
         if (maxHealth > 0)
             _maxHealth = maxHealth;
         else
-            Debug.LogError("���� �� ������ 0");
+            Debug.LogError("Максимальное здоровье не может быть 0");
 
         if (health > 0)
             if (health > maxHealth)
@@ -30,14 +30,14 @@ public class Health : MonoBehaviour
                 ChaigeHealth?.Invoke(_maxHealth, _health);
             }
         else
-            Debug.LogError("�� ������ 0");
+            Debug.LogError("Здоровье не может быть 0");
 
     }
 
     public void AddHealth(int health)
     {
         if(health < 0)
-            Debug.LogError("����������� �� ���� 0");
+            Debug.LogError("Значение здоровья не может быть меньше 0");
 
         if (_health + health > _maxHealth)
         {
@@ -54,7 +54,7 @@ public class Health : MonoBehaviour
     public void RemoveHealth(int health)
     {
         if (health < 0)
-            Debug.LogError("���������� �� ���� 0");
+            Debug.LogError("Значение здоровья не может быть меньше 0");
 
         if (_health - health < 0)
         {

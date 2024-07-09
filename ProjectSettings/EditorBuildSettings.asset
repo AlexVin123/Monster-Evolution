@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/InitSDK.unity
-    guid: f049edce5414f41549846c1db5b56156
+    path: Assets/!YaAssets/Scenes/InitSDK.unity
+    guid: 881cd804a5b5d4f43a30fca9373b1458
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05

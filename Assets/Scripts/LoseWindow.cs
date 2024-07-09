@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using YG;
 
 public class LoseWindow : Window
 {
@@ -33,7 +34,8 @@ public class LoseWindow : Window
 
     private void RewardRevivalInvoke()
     {
-        Close();
+        YandexGame.RewVideoShow(onReward: Close);
+        //Close();
         RewardRevival?.Invoke();
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571379, b: 0.3069225, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -852,7 +852,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250202931}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.25908262, y: 0.000000016618802, z: -0.0000000044578545, w: 0.9658552}
+  m_LocalRotation: {x: 0.25908262, y: -0.000000016618872, z: 0.0000000044578736, w: 0.9658552}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1410,7 +1410,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.24147128, y: 0.000000016697209, z: -0.0000000041548467, w: 0.97040796}
+  m_LocalRotation: {x: 0.24147128, y: -0.000000016697209, z: 0.0000000041548467, w: 0.97040796}
   m_LocalPosition: {x: 0, y: 3.85, z: -6.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2674,6 +2674,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763a754d21cb1624f947af662b88eb26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _expBooster: {fileID: 1142322581}
+  _boostDuration: 15
 --- !u!114 &697524380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3609,7 +3611,7 @@ GameObject:
   - component: {fileID: 1142322582}
   - component: {fileID: 1142322581}
   m_Layer: 5
-  m_Name: Button
+  m_Name: 'Exp Boost X2_Button '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3907,7 +3909,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236819199}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2414713, y: 0.0000000083486045, z: -0.0000000020774238, w: 0.97040796}
+  m_LocalRotation: {x: 0.2414713, y: -0.0000000083486045, z: 0.0000000020774238, w: 0.97040796}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6149,8 +6151,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _root: {fileID: 199390858}
-  _buttonRevival: {fileID: 2120104686}
-  _buttonRewardRevival: {fileID: 1088244449}
+  _buttonRevival: {fileID: 1088244449}
+  _buttonRewardRevival: {fileID: 2120104686}
 --- !u!1 &2039068479
 GameObject:
   m_ObjectHideFlags: 0
