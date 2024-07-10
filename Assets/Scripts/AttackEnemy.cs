@@ -38,7 +38,7 @@ public class AttackEnemy : Enemy
     {
         if (_player != null)
         {
-            Vector3 playerPos = new Vector3(_player.transform.position.x, _player.transform.position.y, 0);
+            Vector3 playerPos = new Vector3(_player.transform.position.x, 0, _player.transform.position.z);
             transform.LookAt(playerPos);
         }
     }
@@ -47,23 +47,32 @@ public class AttackEnemy : Enemy
     {
         base.OnNoHealth();
         _detecter.OnPlayerDie();
+        if (_attack != null)
+            StopCoroutine(_attack);
+        _attack = null;
+        _attacker.gameObject.SetActive(false);
     }
 
     private void OnPlayerDetect(Player player)
     {
         _player = player;
+        animator.SetBool("Attack", true);
         _attack = StartCoroutine(AttackCorutine());
     }
 
     private void OnNoPlayer()
     {
         _player = null;
+        animator.SetBool("Attack", false);
+        if(_attack != null)
         StopCoroutine(_attack);
+        _attack = null;
+        _attacker.gameObject.SetActive(false);
     }
 
     private IEnumerator AttackCorutine()
     {
-        while(true)
+        while (true)
         {
             yield return _delay;
             _attacker.gameObject.SetActive(true);
