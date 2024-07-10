@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     private Vector3 _startPoint;
 
     public int Lvl => _exp.CurrentLvl;
+    public bool dying {  get; private set; }
 
     public event UnityAction Die;
 
@@ -111,7 +112,9 @@ public class Player : MonoBehaviour
     private IEnumerator DieCorutine()
     {
         _animator.SetBool("Die", true);
+        _characterControl.enabled = false;
         yield return _dieTimer;
+        dying = true;
         Die?.Invoke();
     }
 
@@ -120,8 +123,11 @@ public class Player : MonoBehaviour
         InitHealth();
         _animator.SetBool("Die", false);
         int removeExp = (int)Mathf.Lerp(0f, (float)_exp.CurrentExp, _modificatorRemoveExp);
+        Debug.Log("RemoveExp " + removeExp);
         _exp.RemoveExp(removeExp);
         transform.position = _startPoint;
+        dying = false;
+        _characterControl.enabled = true;
     }
 
     public void OnRewardRevival()
@@ -129,5 +135,6 @@ public class Player : MonoBehaviour
         InitHealth();
         _animator.SetBool("Die", false);
         transform.position = _startPoint;
+        _characterControl.enabled = true;
     }
 }

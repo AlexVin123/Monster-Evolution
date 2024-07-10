@@ -43,6 +43,12 @@ public class AttackEnemy : Enemy
         }
     }
 
+    protected override void OnNoHealth()
+    {
+        base.OnNoHealth();
+        _detecter.OnPlayerDie();
+    }
+
     private void OnPlayerDetect(Player player)
     {
         _player = player;

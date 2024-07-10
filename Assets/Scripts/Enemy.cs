@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
         _health.NoHealth -= OnNoHealth;
     }
 
-    private void OnNoHealth()
+    protected virtual void OnNoHealth()
     {
         _visual.SetActive(false);
         _collider.enabled = false;
