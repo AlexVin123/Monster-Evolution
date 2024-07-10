@@ -27,7 +27,7 @@ function GetPayments(sendback) {
                                 title[i] = products[i].title;
                                 description[i] = products[i].description;
                                 imageURI[i] = products[i].imageURI;
-                                priceValue[i] = products[i].priceValue;
+                                priceValue[i] = products[i].price;
 
                                 consumed[i] = true;
                                 for (i2 = 0; i2 < purchases.length; i2++) {

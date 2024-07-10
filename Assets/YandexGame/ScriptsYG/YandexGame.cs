@@ -100,6 +100,9 @@ namespace YG
                 CallInitBaisYG();
                 CallInitYG();
                 GetPayments();
+                YaAssets.Localization.InitTranslations();
+                savesData.LoadSave();
+                StartCoroutine(SaveCloudCoroutine());
             }
         }
 
@@ -214,11 +217,14 @@ namespace YG
         #region Fullscren Ad Show
         [DllImport("__Internal")]
         private static extern void FullAdShow();
-
-        public void _FullscreenShow()
+        private Action _onFullscreenClose;
+        private Action _onFullscreenStart;
+        public void _FullscreenShow(Action OnStart = null, Action OnClose = null)
         {
             if (!nowAdsShow && timerShowAd >= infoYG.fullscreenAdInterval)
             {
+                _onFullscreenStart = OnStart;
+                _onFullscreenClose = OnClose;
                 timerShowAd = 0;
                 onAdNotification?.Invoke();
 #if !UNITY_EDITOR
@@ -230,11 +236,13 @@ namespace YG
             }
             else
             {
+                OnStart?.Invoke();
+                OnClose?.Invoke();
                 Message($"До запроса к показу рекламы в середине игры {(infoYG.fullscreenAdInterval - timerShowAd).ToString("00.0")} сек.");
             }
         }
 
-        public static void FullscreenShow() => Instance._FullscreenShow();
+        public static void FullscreenShow(Action OnStart = null, Action OnClose = null) => Instance._FullscreenShow(OnStart, OnClose);
 
 #if UNITY_EDITOR
         private void FullAdInEditor()
@@ -250,13 +258,19 @@ namespace YG
         #region Rewarded Video Show
         [DllImport("__Internal")]
         private static extern void RewardedShow(int id);
+        private bool _rewardedVideoRequested = false;
+        private Action OnRewardVideoCallback;
 
-        public void _RewardedShow(int id)
+        public void _RewardedShow(int id = 0, Action onReward = null)
         {
+            if (_rewardedVideoRequested == true)
+                return;
             Message("Rewarded Ad Show");
 
             if (!nowFullAd && !nowVideoAd)
             {
+                _rewardedVideoRequested = true;
+                OnRewardVideoCallback = onReward;
                 onAdNotification?.Invoke();
 #if !UNITY_EDITOR
                 RewardedShow(id);
@@ -266,7 +280,7 @@ namespace YG
             }
         }
 
-        public static void RewVideoShow(int id) => Instance._RewardedShow(id);
+        public static void RewVideoShow(int id = 0, Action onReward = null) => Instance._RewardedShow(id, onReward);
 
 #if UNITY_EDITOR
         private void AdRewardInEditor(int id)
@@ -512,6 +526,7 @@ namespace YG
             OpenFullscreenAd.Invoke();
             OpenFullAdEvent?.Invoke();
             nowFullAd = true;
+            _onFullscreenStart?.Invoke();
         }
 
         public static Action CloseFullAdEvent;
@@ -521,6 +536,7 @@ namespace YG
             CloseFullscreenAd.Invoke();
             CloseFullAdEvent?.Invoke();
             timerShowAd = 0;
+            _onFullscreenClose?.Invoke();
 #if !UNITY_EDITOR
             if (wasShown == "true")
             {
@@ -576,6 +592,7 @@ namespace YG
             {
                 RewardVideoAd.Invoke();
                 RewardVideoEvent?.Invoke(lastRewardAdID);
+                OnRewardVideoCallback?.Invoke();
             }
             else if (rewardAdResult == RewardAdResult.Error)
             {
@@ -583,6 +600,7 @@ namespace YG
             }
 
             rewardAdResult = RewardAdResult.None;
+            _rewardedVideoRequested = false;
         }
 
         public static Action<int> RewardVideoEvent;
@@ -611,6 +629,7 @@ namespace YG
                 {
                     RewardVideoAd.Invoke();
                     RewardVideoEvent?.Invoke(id);
+                    OnRewardVideoCallback?.Invoke();
                 }
             }
             else

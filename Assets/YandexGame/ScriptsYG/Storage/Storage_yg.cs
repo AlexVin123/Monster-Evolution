@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.IO;
 using System.Runtime.InteropServices;
 using UnityEngine;
@@ -138,25 +139,53 @@ namespace YG
         }
         public static void ResetSaveProgress() => Instance._ResetSaveProgress();
 
-        public void _SaveProgress()
+        public void _SaveProgress(bool forceSave = false)
         {
             savesData.idSave++;
 #if !UNITY_EDITOR
-                if (!infoYG.saveCloud || (infoYG.saveCloud && infoYG.localSaveSync))
-                {
-                    SaveLocal();
-                }
-
-                if (infoYG.saveCloud && timerSaveCloud >= infoYG.saveCloudInterval + 1)
-                {
-                    timerSaveCloud = 0;
-                    SaveCloud();
-                }
+            if (!infoYG.saveCloud || (infoYG.saveCloud && infoYG.localSaveSync))
+            {
+                SaveLocal();
+            }
+            if (forceSave == true)
+            {
+                timerSaveCloud = 0;
+                SaveCloud();
+                _needSaveCloud = false;
+            }
+            else
+                _needSaveCloud = true;
+            //if (infoYG.saveCloud && timerSaveCloud >= infoYG.saveCloudInterval + 1)
+            //{
+            //    timerSaveCloud = 0;
+            //    SaveCloud();
+            //}
 #else
             SaveEditor();
 #endif
         }
-        public static void SaveProgress() => Instance._SaveProgress();
+        private bool _needSaveCloud = false;
+
+        private IEnumerator SaveCloudCoroutine()
+        {
+            while (true)
+            {
+#if !UNITY_EDITOR
+                if (_needSaveCloud == true)
+                {
+                    if (infoYG.saveCloud && timerSaveCloud >= infoYG.saveCloudInterval + 1)
+                    {
+                        timerSaveCloud = 0;
+                        SaveCloud();
+                        _needSaveCloud = false;
+                    }
+                }
+#endif
+                yield return null;
+            }
+        }
+
+        public static void SaveProgress(bool forceSave = false) => Instance._SaveProgress(forceSave);
 
         public void _LoadProgress()
         {
