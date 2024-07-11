@@ -3310,8 +3310,8 @@ MonoBehaviour:
   m_RollDamping: 0
   m_AngularDamping: 0
   m_Heading:
-    m_Definition: 3
-    m_VelocityFilterStrength: 4
+    m_Definition: 1
+    m_VelocityFilterStrength: 10
     m_Bias: 0
   m_RecenterToTargetHeading:
     m_enabled: 0
@@ -4244,7 +4244,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250202931}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2647124, y: -1e-45, z: -0, w: 0.96432745}
+  m_LocalRotation: {x: 0.2647124, y: 1e-45, z: -0, w: 0.96432745}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5805,8 +5805,8 @@ MonoBehaviour:
       m_LegacyHeadingDefinition: -1
       m_LegacyVelocityFilterStrength: -1
   m_Heading:
-    m_Definition: 3
-    m_VelocityFilterStrength: 4
+    m_Definition: 1
+    m_VelocityFilterStrength: 10
     m_Bias: 0
   m_RecenterToTargetHeading:
     m_enabled: 1
@@ -6080,7 +6080,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.24712797, y: 0.00000003728126, z: -0.000000009508158, w: 0.9689829}
+  m_LocalRotation: {x: 0.24712797, y: 0.000000037281264, z: -0.000000009508159, w: 0.9689829}
   m_LocalPosition: {x: 0, y: 5.618, z: -7.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19881,7 +19881,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236819199}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.24712794, y: 0.000000018640629, z: -0.000000004754078, w: 0.9689829}
+  m_LocalRotation: {x: 0.24712794, y: 0.00000001864063, z: -0.000000004754078, w: 0.9689829}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -23825,7 +23825,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514915047}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.22950849, y: -0.000000023683958, z: 0.000000005584745, w: 0.97330666}
+  m_LocalRotation: {x: 0.22950849, y: -0.000000023683953, z: 0.000000005584744, w: 0.97330666}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -25562,8 +25562,8 @@ MonoBehaviour:
   m_RollDamping: 0
   m_AngularDamping: 0
   m_Heading:
-    m_Definition: 3
-    m_VelocityFilterStrength: 4
+    m_Definition: 1
+    m_VelocityFilterStrength: 10
     m_Bias: 0
   m_RecenterToTargetHeading:
     m_enabled: 0
@@ -28122,8 +28122,8 @@ MonoBehaviour:
   m_RollDamping: 0
   m_AngularDamping: 0
   m_Heading:
-    m_Definition: 3
-    m_VelocityFilterStrength: 4
+    m_Definition: 1
+    m_VelocityFilterStrength: 10
     m_Bias: 0
   m_RecenterToTargetHeading:
     m_enabled: 0
