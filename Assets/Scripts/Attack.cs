@@ -22,7 +22,7 @@ public class Attack : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKey(KeyCode.R))
+        if(Input.GetKey(KeyCode.Mouse0))
         {
             if(_attackCorutine == null)
             {
