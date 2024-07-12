@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class Player : MonoBehaviour
 {
     [SerializeField] private List<PlayerView> _playerViews;
-    [SerializeField] private Animator _animator;
+    private Animator _animator;
     [SerializeField] private float _timeDie;
     [SerializeField][Range(0,100)] private int _modificatorRemoveExp;
 
@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
         _attack = GetComponent<Attack>();
         _characterControl = GetComponent<SimpleSampleCharacterControl>();
         _exp.Init(_playerViews);
-        _attack.Init(_animator,DamageToLvl(_exp.CurrentLvl));
+        _attack.Init(_animator,DamageToLvl(_exp.CurrentLvl), AttackColliderToLvl(_exp.CurrentLvl),_exp);
         OnChaigeLvl(_exp.CurrentLvl);
         InitHealth();
         _characterControl.Init(_animator);
@@ -89,7 +89,7 @@ public class Player : MonoBehaviour
             _playerViews[_playerViews.Count - 1].gameObject.SetActive(true);
             _animator = _playerViews[_playerViews.Count - 1].Animator;
         }
-        _attack.Init(_animator, DamageToLvl(_exp.CurrentLvl));
+        _attack.Init(_animator, DamageToLvl(_exp.CurrentLvl), AttackColliderToLvl(_exp.CurrentLvl),_exp);
         _characterControl.Upgrade(SpeedToLvl(_exp.CurrentLvl), ForceJumpToLvl(_exp.CurrentLvl));
 
     }
@@ -125,6 +125,17 @@ public class Player : MonoBehaviour
         }
 
         return _playerViews[_playerViews.Count - 1].PlayerData.Damage;
+    }
+
+    private AttackCollider AttackColliderToLvl(int lvl)
+    {
+        foreach (PlayerView view in _playerViews)
+        {
+            if (view.PlayerData.Lvl == lvl)
+                return view.AttackCollider;
+        }
+
+        return _playerViews[_playerViews.Count - 1].AttackCollider;
     }
 
     private void OnDie()

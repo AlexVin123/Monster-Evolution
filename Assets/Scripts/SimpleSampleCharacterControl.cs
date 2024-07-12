@@ -20,7 +20,7 @@ namespace Supercyan.FreeSample
         [SerializeField] private float m_moveSpeed = 2;
         [SerializeField] private float m_turnSpeed = 200;
         [SerializeField] private float m_jumpForce = 4;
-        [SerializeField] private RotateAround _rotateAround;
+ 
 
         [SerializeField] private Animator m_animator = null;
         [SerializeField] private Rigidbody m_rigidBody = null;

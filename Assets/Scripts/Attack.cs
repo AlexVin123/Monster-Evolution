@@ -5,17 +5,18 @@ using UnityEngine.AI;
 
 public class Attack : MonoBehaviour
 {
-    [SerializeField] private AttackCollider _attackCollider;
+    private AttackCollider _attackCollider;
     [SerializeField] private float _timeAttack = 0.1f;
     private Animator _animator;
     private Coroutine _attackCorutine;
     private WaitForSeconds _delay;
 
 
-    public void Init(Animator animator, int damage)
+    public void Init(Animator animator, int damage, AttackCollider attackCollider, Exp exp)
     {
         _delay = new WaitForSeconds(_timeAttack);
-        _attackCollider.Init(damage);
+        _attackCollider = attackCollider;
+        _attackCollider.Init(damage,exp);
         _animator = animator;
         _attackCollider.gameObject.SetActive(false);
     }
