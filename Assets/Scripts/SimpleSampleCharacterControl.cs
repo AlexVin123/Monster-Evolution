@@ -69,7 +69,7 @@ namespace Supercyan.FreeSample
             ContactPoint[] contactPoints = collision.contacts;
             for (int i = 0; i < contactPoints.Length; i++)
             {
-                if (Vector3.Dot(contactPoints[i].normal, Vector3.up) > 0.5f)
+                if (Vector3.Dot(contactPoints[i].normal, Vector3.up) > 0.1f)
                 {
                     if (!m_collisions.Contains(collision.collider))
                     {
@@ -86,7 +86,7 @@ namespace Supercyan.FreeSample
             bool validSurfaceNormal = false;
             for (int i = 0; i < contactPoints.Length; i++)
             {
-                if (Vector3.Dot(contactPoints[i].normal, Vector3.up) > 0.5f)
+                if (Vector3.Dot(contactPoints[i].normal, Vector3.up) > 0.1f)
                 {
                     validSurfaceNormal = true; break;
                 }
