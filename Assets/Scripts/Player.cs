@@ -30,11 +30,11 @@ public class Player : MonoBehaviour
         _health = GetComponent<Health>();
         _exp = GetComponent<Exp>();
         _attack = GetComponent<Attack>();
+        _characterControl = GetComponent<SimpleSampleCharacterControl>();
         _exp.Init(_playerViews);
         _attack.Init(_animator,DamageToLvl(_exp.CurrentLvl));
         OnChaigeLvl(_exp.CurrentLvl);
         InitHealth();
-        _characterControl = GetComponent<SimpleSampleCharacterControl>();
         _characterControl.Init(_animator);
         _exp.ChaigeLvl += OnChaigeLvl;
         _health.NoHealth += OnDie;
@@ -60,6 +60,7 @@ public class Player : MonoBehaviour
             }
         }
 
+        maxHealth = _playerViews[_playerViews.Count - 1].PlayerData.Health;
         _health.Init(maxHealth, maxHealth);
     }
 
@@ -88,9 +89,31 @@ public class Player : MonoBehaviour
             _playerViews[_playerViews.Count - 1].gameObject.SetActive(true);
             _animator = _playerViews[_playerViews.Count - 1].Animator;
         }
-
         _attack.Init(_animator, DamageToLvl(_exp.CurrentLvl));
+        _characterControl.Upgrade(SpeedToLvl(_exp.CurrentLvl), ForceJumpToLvl(_exp.CurrentLvl));
 
+    }
+
+    private float ForceJumpToLvl(int lvl)
+    {
+        foreach (PlayerView view in _playerViews)
+        {
+            if (view.PlayerData.Lvl == lvl)
+                return view.PlayerData.ForgeJump;
+        }
+
+        return _playerViews[_playerViews.Count - 1].PlayerData.ForgeJump;
+    }
+
+    private float SpeedToLvl(int lvl)
+    {
+        foreach (PlayerView view in _playerViews)
+        {
+            if (view.PlayerData.Lvl == lvl)
+                return view.PlayerData.Speed;
+        }
+
+        return _playerViews[_playerViews.Count - 1].PlayerData.Speed;
     }
 
     private int DamageToLvl(int lvl)

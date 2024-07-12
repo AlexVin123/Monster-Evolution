@@ -50,13 +50,18 @@ namespace Supercyan.FreeSample
 
         private void Awake()
         {
-            //if (!m_animator) { gameObject.GetComponent<Animator>(); }
             if (!m_rigidBody) { gameObject.GetComponent<Animator>(); }
         }
 
         public void Init(Animator animator)
         {
             m_animator = animator;
+        }
+
+        public void Upgrade(float speed, float forceJump)
+        {
+            m_moveSpeed = speed;
+            m_jumpForce = forceJump;
         }
 
         private void OnCollisionEnter(Collision collision)
@@ -199,8 +204,8 @@ namespace Supercyan.FreeSample
             {
                 m_currentDirection = Vector3.Slerp(m_currentDirection, direction, Time.deltaTime * m_interpolation);
 
-                transform.rotation = Quaternion.LookRotation(m_currentDirection);
-                transform.position += m_currentDirection * m_moveSpeed * Time.deltaTime;
+                m_rigidBody.rotation = Quaternion.LookRotation(m_currentDirection);
+                m_rigidBody.position += m_currentDirection * m_moveSpeed * Time.deltaTime;
 
                 m_animator.SetFloat("MoveSpeed", direction.magnitude);
             }

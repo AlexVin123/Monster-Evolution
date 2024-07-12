@@ -18,3 +18,5 @@ MonoBehaviour:
   <Damage>k__BackingField: 20
   <Icon>k__BackingField: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   <Name>k__BackingField: turtle
+  <Speed>k__BackingField: 4
+  <ForgeJump>k__BackingField: 8

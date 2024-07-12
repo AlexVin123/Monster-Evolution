@@ -15,6 +15,12 @@ public class AttackCollider : MonoBehaviour
         _damage = damage;
     }
 
+    public void Init(int damage, Exp exp)
+    {
+        _exp = exp;
+        _damage = damage;
+    }
+
     private void OnDisable()
     {
         _enemy = null;

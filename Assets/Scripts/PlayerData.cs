@@ -11,4 +11,6 @@ public class PlayerData : ScriptableObject
     [field: SerializeField] public int Damage { get; private set; }
     [field: SerializeField] public Sprite Icon { get; private set; }
     [field: SerializeField] public string Name { get; private set; }
+    [field: SerializeField] public float Speed { get; private set; }
+    [field: SerializeField] public float ForgeJump {  get; private set; }
 }

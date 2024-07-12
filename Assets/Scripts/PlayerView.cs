@@ -9,8 +9,10 @@ public class PlayerView : MonoBehaviour
     [field:SerializeField] public PlayerData PlayerData {  get; private set; }
     [field: SerializeField] public Animator Animator { get; private set; }
 
-    private void Awake()
+    [field: SerializeField] public AttackCollider _attackCollider { get; private set; }
+
+    public void Init(int damage, Exp exp)
     {
-        Animator = GetComponent<Animator>();
+        _attackCollider.Init(damage);
     }
 }

@@ -18,3 +18,5 @@ MonoBehaviour:
   <Damage>k__BackingField: 10
   <Icon>k__BackingField: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   <Name>k__BackingField: slime
+  <Speed>k__BackingField: 2
+  <ForgeJump>k__BackingField: 4

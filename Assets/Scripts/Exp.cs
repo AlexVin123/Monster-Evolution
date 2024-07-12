@@ -19,7 +19,6 @@ public class Exp : MonoBehaviour
     private int _currentLvl;
     private int _currentExp = 0;
     private int _maxExp;
-    private int _expForNextLvl;
     private List<PlayerView> _players;
 
     public event UnityAction<int> ChaigeLvl;
@@ -43,7 +42,6 @@ public class Exp : MonoBehaviour
             _currentLvl = PlayerPrefs.GetInt("Lvl");
 
         _maxExp = LvlToMaxExp(_currentLvl);
-        _expForNextLvl = LvlToMaxExp(_currentExp + 1);
 
         if (PlayerPrefs.HasKey("Exp"))
             _currentExp = PlayerPrefs.GetInt("Exp");
@@ -58,7 +56,7 @@ public class Exp : MonoBehaviour
 
         _currentExp += exp * _expRate;
 
-        if (_currentExp >= _expForNextLvl)
+        if (_currentExp >= _maxExp)
         {
             NextLvl();
         }
@@ -80,9 +78,8 @@ public class Exp : MonoBehaviour
     public void NextLvl()
     {
         _currentLvl++;
-        _maxExp = LvlToMaxExp(_currentLvl);
-        _expForNextLvl = LvlToMaxExp(_currentLvl + 1);
         PlayerPrefs.SetInt("Lvl", _currentLvl);
+        _maxExp = LvlToMaxExp(_currentLvl);
         ChaigeLvl.Invoke(_currentLvl);
     }
 
@@ -94,7 +91,7 @@ public class Exp : MonoBehaviour
                 return player.PlayerData.Exp;
         }
 
-        return (int)((float)_maxExp + ((float)_maxExp * 0.25));
+        return (int)((float)_players[_players.Count -1].PlayerData.Exp + ((float)_players[_players.Count - 1].PlayerData.Exp * (0.5 * (float)lvl)));
     }
     
     private void OnExpBoosterClicked()
