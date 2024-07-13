@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class AttackEnemy : Enemy
 {
-    [SerializeField] private DetectPlayerCollider _detecter;
+    [SerializeField] private DetectHealthCollider _detecter;
     [SerializeField] private AttackCollider _attacker;
     [SerializeField] private float _delayAttack = 2;
 
-    private Player _player;
+    private Health _healthEnemy;
     private Coroutine _attack;
     private WaitForSeconds _delay;
 
@@ -36,9 +36,9 @@ public class AttackEnemy : Enemy
 
     private void Update()
     {
-        if (_player != null)
+        if (_healthEnemy != null)
         {
-            Vector3 playerPos = new Vector3(_player.transform.position.x, 0, _player.transform.position.z);
+            Vector3 playerPos = new Vector3(_healthEnemy.transform.position.x, 0, _healthEnemy.transform.position.z);
             transform.LookAt(playerPos);
         }
     }
@@ -53,16 +53,16 @@ public class AttackEnemy : Enemy
         _attacker.gameObject.SetActive(false);
     }
 
-    private void OnPlayerDetect(Player player)
+    private void OnPlayerDetect(Health health)
     {
-        _player = player;
+        _healthEnemy = health;
         animator.SetBool("Attack", true);
         _attack = StartCoroutine(AttackCorutine());
     }
 
     private void OnNoPlayer()
     {
-        _player = null;
+        _healthEnemy = null;
         animator.SetBool("Attack", false);
         if(_attack != null)
         StopCoroutine(_attack);

@@ -11,9 +11,12 @@ public class AICharacter : MonoBehaviour
     private State _currentState;
 
 
-    public void Init()
+    public void Start()
     {
+        if (_currentState == null)
+            _currentState = _firstState;
 
+        _currentState.Enter();
     }
 
     private void Update()
