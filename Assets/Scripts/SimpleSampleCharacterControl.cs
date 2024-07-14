@@ -6,9 +6,9 @@ namespace Supercyan.FreeSample
     public class SimpleSampleCharacterControl : MonoBehaviour
     {
 
-        private float m_moveSpeed = 2;
+        [SerializeField]private float m_moveSpeed = 10;
         [SerializeField] private float m_turnSpeed = 200;
-        private float m_jumpForce = 4;
+        [SerializeField]private float m_jumpForce = 10;
 
 
         private Animator m_animator = null;
