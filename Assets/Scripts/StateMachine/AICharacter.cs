@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AICharacter : MonoBehaviour
+public class AICharacter : Enemy
 {
 
     [SerializeField] private State _firstState;
@@ -36,8 +36,9 @@ public class AICharacter : MonoBehaviour
         _currentState.Enter();
     }
 
-    private void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
         _health.HealthEnd -= Die;
     }
 
