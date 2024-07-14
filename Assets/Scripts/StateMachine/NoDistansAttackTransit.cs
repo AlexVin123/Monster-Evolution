@@ -16,7 +16,7 @@ public class NoDistansAttackTransit : Transition
 
        bool needTransit = false;
 
-        if (Vector3.Distance(transform.position, _detectHealthCollider.Health.transform.position) > 1f)
+        if (Vector3.Distance(transform.position, _detectHealthCollider.Health.transform.position) > 2f)
             needTransit = true;
 
         NeedTransit = needTransit;

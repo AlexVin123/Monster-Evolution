@@ -25,12 +25,12 @@ public class Enemy : MonoBehaviour
 
     protected virtual void OnEnable()
     {
-        _health.NoHealth += OnNoHealth;
+        _health.HealthEnd += OnNoHealth;
     }
 
     protected virtual void OnDisable()
     {
-        _health.NoHealth -= OnNoHealth;
+        _health.HealthEnd -= OnNoHealth;
     }
 
     protected virtual void OnNoHealth()

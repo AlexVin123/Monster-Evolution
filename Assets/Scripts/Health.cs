@@ -9,7 +9,9 @@ public class Health : MonoBehaviour
     private int _maxHealth;
 
     public event UnityAction<int, int> ChaigeHealth;
-    public event UnityAction NoHealth;
+    public event UnityAction HealthEnd;
+
+    public bool NoHealth => _health <= 0;
 
     public void Init(int maxHealth, int health)
     {
@@ -56,11 +58,11 @@ public class Health : MonoBehaviour
         if (health < 0)
             Debug.LogError("Значение здоровья не может быть меньше 0");
 
-        if (_health - health < 0)
+        if (_health - health <= 0)
         {
             _health = 0;
             ChaigeHealth?.Invoke(_maxHealth, _health);
-            NoHealth?.Invoke();
+            HealthEnd?.Invoke();
         }
         else
         {

@@ -6,7 +6,7 @@ using UnityEngine;
 public class AttackState : State
 {
     [SerializeField] private DetectHealthCollider _detectHealthCollider;
-    [SerializeField] private AttackCollider _attacker;
+    [SerializeField] private AICharacter _chatacter;
     [SerializeField] private AIMovement _move;
     [SerializeField] private GameObject _ai;
 
@@ -33,9 +33,9 @@ public class AttackState : State
             yield return new WaitForSeconds(0.5f);
             Vector3 playerPos = new Vector3(_detectHealthCollider.Health.transform.position.x, 0, _detectHealthCollider.Health.transform.position.z);
             _ai.transform.LookAt(playerPos);
-            _attacker.gameObject.SetActive(true);
+            _chatacter.AttackCollider.gameObject.SetActive(true);
             yield return new WaitForSeconds(0.5f);
-            _attacker.gameObject.SetActive(false);
+            _chatacter.AttackCollider.gameObject.SetActive(false);
         }
     }
 }

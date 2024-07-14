@@ -101,8 +101,9 @@ public class AIMovement : MonoBehaviour
 
     public void OnModificationUpdate(float value)
     {
-        _speedRate = value;
-        _agent.speed = Speed * _speedRate;
+        _agent.speed = value;
+        //_speedRate = value;
+        //_agent.speed = Speed * _speedRate;
     }
 
     public void SetBonusSpeedRate(float rate)

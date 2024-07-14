@@ -18,7 +18,7 @@ public class DetectHealthCollider : MonoBehaviour
         {
             _health = health;
             DetectPlayer?.Invoke(health);
-            _health.NoHealth += OnPlayerDie;
+            _health.HealthEnd += OnPlayerDie;
         }
     }
 
@@ -27,7 +27,7 @@ public class DetectHealthCollider : MonoBehaviour
         if(other.TryGetComponent(out Health player))
         {
             NoPlayer?.Invoke();
-            _health.NoHealth -= OnPlayerDie;
+            _health.HealthEnd -= OnPlayerDie;
             _health = null;
         }
     }
@@ -35,7 +35,7 @@ public class DetectHealthCollider : MonoBehaviour
     public void OnPlayerDie()
     {
         NoPlayer?.Invoke();
-        _health.NoHealth -= OnPlayerDie;
-        _health = null;
+        _health.HealthEnd -= OnPlayerDie;
+
     }
 }

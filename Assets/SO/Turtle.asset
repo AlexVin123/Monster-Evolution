@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Lvl>k__BackingField: 2
   <Exp>k__BackingField: 25
-  <Health>k__BackingField: 30
+  <Health>k__BackingField: 10000
   <Damage>k__BackingField: 20
   <Icon>k__BackingField: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   <Name>k__BackingField: turtle

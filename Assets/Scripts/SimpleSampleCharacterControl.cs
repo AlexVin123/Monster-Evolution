@@ -17,12 +17,12 @@ namespace Supercyan.FreeSample
             Direct
         }
 
-        [SerializeField] private float m_moveSpeed = 2;
+         private float m_moveSpeed = 2;
         [SerializeField] private float m_turnSpeed = 200;
-        [SerializeField] private float m_jumpForce = 4;
+         private float m_jumpForce = 4;
  
 
-        [SerializeField] private Animator m_animator = null;
+        private Animator m_animator = null;
         [SerializeField] private Rigidbody m_rigidBody = null;
 
         [SerializeField] private ControlMode m_controlMode = ControlMode.Direct;

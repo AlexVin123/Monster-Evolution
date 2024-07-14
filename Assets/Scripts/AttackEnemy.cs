@@ -38,8 +38,9 @@ public class AttackEnemy : Enemy
     {
         if (_healthEnemy != null)
         {
-            Vector3 playerPos = new Vector3(_healthEnemy.transform.position.x, 0, _healthEnemy.transform.position.z);
+            Vector3 playerPos = new Vector3(_healthEnemy.transform.position.x, _healthEnemy.transform.position.y, _healthEnemy.transform.position.z);
             transform.LookAt(playerPos);
+            transform.Rotate(0, transform.rotation.y, 0);
         }
     }
 

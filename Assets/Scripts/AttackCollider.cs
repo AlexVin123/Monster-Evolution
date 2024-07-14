@@ -36,14 +36,14 @@ public class AttackCollider : MonoBehaviour
             if (other.gameObject.TryGetComponent(out Enemy enemy))
             {
                 _enemy = enemy;
-                health.NoHealth += OnEnemyDie;
+                health.HealthEnd += OnEnemyDie;
                 EnemyFind = true;
             }
-
-            health.RemoveHealth(_damage);
+            if (health.NoHealth == false)
+                health.RemoveHealth(_damage);
 
             if (EnemyFind == true)
-                health.NoHealth -= OnEnemyDie;
+                health.HealthEnd -= OnEnemyDie;
 
             _attaced = true;
         }

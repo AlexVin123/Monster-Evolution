@@ -26,6 +26,9 @@ public class Exp : MonoBehaviour
 
     public int CurrentLvl => _currentLvl;
     public int CurrentExp => _currentExp;
+
+    public int MaxLvl { get; private set; } 
+
     
     private void Start()
     {
@@ -37,6 +40,7 @@ public class Exp : MonoBehaviour
     {
         _players = players;
         _currentLvl = 1;
+        MaxLvl = _players[_players.Count - 1].PlayerData.Lvl;
 
         if (PlayerPrefs.HasKey("Lvl"))
             _currentLvl = PlayerPrefs.GetInt("Lvl");

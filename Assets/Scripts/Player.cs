@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private List<PlayerView> _playerViews;
     private Animator _animator;
     [SerializeField] private float _timeDie;
-    [SerializeField][Range(0,100)] private int _modificatorRemoveExp;
+    [SerializeField][Range(0, 100)] private int _modificatorRemoveExp;
 
     private Attack _attack;
     private Health _health;
@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     private Vector3 _startPoint;
 
     public int Lvl => _exp.CurrentLvl;
-    public bool dying {  get; private set; }
+    public bool dying { get; private set; }
 
     public event UnityAction Die;
 
@@ -32,19 +32,19 @@ public class Player : MonoBehaviour
         _attack = GetComponent<Attack>();
         _characterControl = GetComponent<SimpleSampleCharacterControl>();
         _exp.Init(_playerViews);
-        _attack.Init(_animator,DamageToLvl(_exp.CurrentLvl), AttackColliderToLvl(_exp.CurrentLvl),_exp);
+        _attack.Init(_animator, DamageToLvl(_exp.CurrentLvl), AttackColliderToLvl(_exp.CurrentLvl), _exp);
         OnChaigeLvl(_exp.CurrentLvl);
         InitHealth();
         _characterControl.Init(_animator);
         _exp.ChaigeLvl += OnChaigeLvl;
-        _health.NoHealth += OnDie;
+        _health.HealthEnd += OnDie;
 
     }
 
     private void OnDisable()
     {
         _exp.ChaigeLvl -= OnChaigeLvl;
-        _health.NoHealth -= OnDie;
+        _health.HealthEnd -= OnDie;
     }
 
     private void InitHealth()
@@ -59,8 +59,8 @@ public class Player : MonoBehaviour
                 maxHealth = playerView.PlayerData.Health;
             }
         }
-
-        maxHealth = _playerViews[_playerViews.Count - 1].PlayerData.Health;
+        if (maxHealth == 0)
+            maxHealth = _playerViews[_playerViews.Count - 1].PlayerData.Health;
         _health.Init(maxHealth, maxHealth);
     }
 
@@ -68,9 +68,9 @@ public class Player : MonoBehaviour
     {
         bool activeView = false;
 
-        foreach (PlayerView view2 in _playerViews)
+        foreach (PlayerView view in _playerViews)
         {
-            view2.gameObject.SetActive(false);
+            view.gameObject.SetActive(false);
         }
 
         foreach (PlayerView view in _playerViews)
@@ -89,7 +89,7 @@ public class Player : MonoBehaviour
             _playerViews[_playerViews.Count - 1].gameObject.SetActive(true);
             _animator = _playerViews[_playerViews.Count - 1].Animator;
         }
-        _attack.Init(_animator, DamageToLvl(_exp.CurrentLvl), AttackColliderToLvl(_exp.CurrentLvl),_exp);
+        _attack.Init(_animator, DamageToLvl(_exp.CurrentLvl), AttackColliderToLvl(_exp.CurrentLvl), _exp);
         _characterControl.Upgrade(SpeedToLvl(_exp.CurrentLvl), ForceJumpToLvl(_exp.CurrentLvl));
 
     }
@@ -118,7 +118,7 @@ public class Player : MonoBehaviour
 
     private int DamageToLvl(int lvl)
     {
-        foreach (PlayerView view in _playerViews) 
+        foreach (PlayerView view in _playerViews)
         {
             if (view.PlayerData.Lvl == lvl)
                 return view.PlayerData.Damage;
@@ -147,8 +147,8 @@ public class Player : MonoBehaviour
     {
         _animator.SetBool("Die", true);
         _characterControl.enabled = false;
-        yield return _dieTimer;
         dying = true;
+        yield return _dieTimer;
         Die?.Invoke();
     }
 

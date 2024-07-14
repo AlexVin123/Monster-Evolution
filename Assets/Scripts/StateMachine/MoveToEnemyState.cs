@@ -24,9 +24,11 @@ public class MoveToEnemyState : State
     {
         while (true)
         {
+            _healthEnemy = _detectHealthCollider.Health;
+
             if (_healthEnemy != null)
             {
-                _healthEnemy = _detectHealthCollider.Health;
+                
                 //_move.Stop();
                 _move.Move(_healthEnemy.transform.position);
 
