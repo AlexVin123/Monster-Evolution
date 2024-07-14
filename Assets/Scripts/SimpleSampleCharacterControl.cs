@@ -115,6 +115,7 @@ namespace Supercyan.FreeSample
         {
             if (m_animator != null)
                 m_animator.SetBool("Grounded", m_isGrounded);
+
             DirectUpdate();
             m_jumpInput = false;
         }
@@ -148,8 +149,8 @@ namespace Supercyan.FreeSample
 
                 m_rigidBody.rotation = Quaternion.LookRotation(m_currentDirection);
                 m_rigidBody.position += m_currentDirection * m_moveSpeed * Time.deltaTime;
-
-                m_animator.SetFloat("MoveSpeed", direction.magnitude);
+                if (m_animator != null)
+                    m_animator.SetFloat("MoveSpeed", direction.magnitude);
             }
 
             JumpingAndLanding();

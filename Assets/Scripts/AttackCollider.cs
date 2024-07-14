@@ -6,7 +6,7 @@ public class AttackCollider : MonoBehaviour
 {
     [SerializeField] private Exp _exp;
     bool _attaced = false;
-    private Enemy _enemy;
+    private IEnemy _enemy;
 
     private int _damage;
 
@@ -33,7 +33,7 @@ public class AttackCollider : MonoBehaviour
         {
             bool EnemyFind = false;
 
-            if (other.gameObject.TryGetComponent(out Enemy enemy))
+            if (other.gameObject.TryGetComponent(out IEnemy enemy))
             {
                 _enemy = enemy;
                 health.HealthEnd += OnEnemyDie;

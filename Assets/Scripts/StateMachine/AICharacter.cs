@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AICharacter : Enemy
+public class AICharacter : MonoBehaviour, IEnemy
 {
 
     [SerializeField] private State _firstState;
@@ -12,11 +12,16 @@ public class AICharacter : Enemy
     [SerializeField] private List<string> _names;
     [SerializeField] private Health _health;
 
+    private int _currentLvl = 1;
+
     private AttackCollider _attackCollider;
 
     private State _currentState;
 
     public AttackCollider AttackCollider => _attackCollider;
+
+    public int Exp => _playerViews[_currentLvl - 1].PlayerData.Exp/5;
+
     public event Action<AICharacter> Died;
 
     public void Init(int lvl)
@@ -36,9 +41,8 @@ public class AICharacter : Enemy
         _currentState.Enter();
     }
 
-    protected override void OnDisable()
+    protected void OnDisable()
     {
-        base.OnDisable();
         _health.HealthEnd -= Die;
     }
 
