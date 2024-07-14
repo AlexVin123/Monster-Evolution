@@ -35,6 +35,7 @@ public class DetectHealthCollider : MonoBehaviour
     public void OnPlayerDie()
     {
         NoPlayer?.Invoke();
+        if(_health != null)
         _health.HealthEnd -= OnPlayerDie;
 
     }

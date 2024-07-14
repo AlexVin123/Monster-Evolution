@@ -10,7 +10,6 @@ public class AttackState : State
     [SerializeField] private AIMovement _move;
     [SerializeField] private GameObject _ai;
 
-    //private Health _healthEnemy;
     private Coroutine _procces;
 
     private void OnEnable()
@@ -31,8 +30,13 @@ public class AttackState : State
         {
 
             yield return new WaitForSeconds(0.5f);
-            Vector3 playerPos = new Vector3(_detectHealthCollider.Health.transform.position.x, 0, _detectHealthCollider.Health.transform.position.z);
-            _ai.transform.LookAt(playerPos);
+
+            if(_detectHealthCollider.Health != null)
+            {
+                Vector3 playerPos = new Vector3(_detectHealthCollider.Health.transform.position.x, 0, _detectHealthCollider.Health.transform.position.z);
+                _ai.transform.LookAt(playerPos);
+            }
+    
             _chatacter.AttackCollider.gameObject.SetActive(true);
             yield return new WaitForSeconds(0.5f);
             _chatacter.AttackCollider.gameObject.SetActive(false);

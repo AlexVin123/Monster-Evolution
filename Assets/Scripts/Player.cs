@@ -80,6 +80,7 @@ public class Player : MonoBehaviour
             {
                 view.gameObject.SetActive(true);
                 _animator = view.Animator;
+                _characterControl.Init(_animator);
                 activeView = true;
             }
         }
@@ -88,6 +89,7 @@ public class Player : MonoBehaviour
         {
             _playerViews[_playerViews.Count - 1].gameObject.SetActive(true);
             _animator = _playerViews[_playerViews.Count - 1].Animator;
+            _characterControl.Init(_animator);
         }
         _attack.Init(_animator, DamageToLvl(_exp.CurrentLvl), AttackColliderToLvl(_exp.CurrentLvl), _exp);
         _characterControl.Upgrade(SpeedToLvl(_exp.CurrentLvl), ForceJumpToLvl(_exp.CurrentLvl));
