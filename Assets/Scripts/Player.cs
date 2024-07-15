@@ -7,6 +7,8 @@ using UnityEngine.Events;
 public class Player : MonoBehaviour
 {
     [SerializeField] private List<PlayerView> _playerViews;
+    [SerializeField] private Animator _rootAnimator;
+    [SerializeField] private ParticleSystem _upLvlFx;
     private Animator _animator;
     [SerializeField] private float _timeDie;
     [SerializeField][Range(0, 100)] private int _modificatorRemoveExp;
@@ -68,6 +70,12 @@ public class Player : MonoBehaviour
     {
         bool activeView = false;
 
+        if (_rootAnimator != null)
+            _rootAnimator.SetTrigger("UpLvl");
+
+        if (_upLvlFx != null)
+            _upLvlFx.Play();
+
         foreach (PlayerView view in _playerViews)
         {
             view.gameObject.SetActive(false);
@@ -84,6 +92,10 @@ public class Player : MonoBehaviour
                 activeView = true;
             }
         }
+
+       
+
+
 
         if (activeView == false)
         {

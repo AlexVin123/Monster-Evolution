@@ -5,6 +5,7 @@ using UnityEngine;
 public class AttackCollider : MonoBehaviour
 {
     [SerializeField] private Exp _exp;
+    [SerializeField] private Animator _attackTrAnim;
     bool _attaced = false;
     private IEnemy _enemy;
 
@@ -13,6 +14,12 @@ public class AttackCollider : MonoBehaviour
     public void Init(int damage)
     {
         _damage = damage;
+    }
+
+    public void OnEnable()
+    {
+        if (_attackTrAnim != null)
+            _attackTrAnim.SetTrigger("Damage");
     }
 
     public void Init(int damage, Exp exp)

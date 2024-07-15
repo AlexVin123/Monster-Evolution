@@ -26,6 +26,7 @@ public class AICharacter : MonoBehaviour, IEnemy
 
     public void Init(int lvl)
     {
+        _currentLvl = lvl;
         _attackCollider = _playerViews[lvl -1 ].AttackCollider;
         _attackCollider.Init(_playerViews[lvl - 1].PlayerData.Damage);
         _movement.OnModificationUpdate(_playerViews[lvl - 1].PlayerData.Speed);
