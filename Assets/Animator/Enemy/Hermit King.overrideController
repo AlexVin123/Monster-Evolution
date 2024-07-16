@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hermit King
+  m_Controller: {fileID: 9100000, guid: 0a4aeb1071c534c478907da3e6464d1d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 832e69c20e884e0790dae5ee86441a63, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: d87d0f126c88a7d429dbdd206dc6bf09, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 1f583387dcc14604b6836cea4b8d68d0, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: c70f87141bcb61943b1b8802040b1ddc, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: b5feebd3cb9a4b82aa44801bbe7548bb, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 472173a6e26b1f146b95166ff171cb34, type: 3}

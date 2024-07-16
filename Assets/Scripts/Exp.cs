@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor.Rendering.Universal;
 using UnityEngine;
 using UnityEngine.Events;
@@ -11,11 +12,13 @@ public class Exp : MonoBehaviour
 {
     [SerializeField] private Button _expBooster;
     [SerializeField] private float _boostDuration = 15f;
+    [SerializeField] private TextMeshProUGUI _addExp;
+    [SerializeField] private Animator _textAnimator;
     private bool _isBoostActive = false;
     private int _expRate;
     private int _originalExpRate = 1;
     private int _boostedExpRate = 2;
-    
+
     private int _currentLvl;
     private int _currentExp = 0;
     private int _maxExp;
@@ -27,9 +30,9 @@ public class Exp : MonoBehaviour
     public int CurrentLvl => _currentLvl;
     public int CurrentExp => _currentExp;
 
-    public int MaxLvl { get; private set; } 
+    public int MaxLvl { get; private set; }
 
-    
+
     private void Start()
     {
         _expBooster.onClick.AddListener(OnExpBoosterClicked);
@@ -57,6 +60,11 @@ public class Exp : MonoBehaviour
     {
         if (exp < 0)
             Debug.LogError("Количество опыта не может быть меньше 0");
+
+        if (_addExp != null)
+            _addExp.text = "+" + exp;
+        if (_textAnimator != null)
+            _textAnimator.SetTrigger("AddExp");
 
         _currentExp += exp * _expRate;
 
@@ -95,9 +103,9 @@ public class Exp : MonoBehaviour
                 return player.PlayerData.Exp;
         }
 
-        return (int)((float)_players[_players.Count -1].PlayerData.Exp + ((float)_players[_players.Count - 1].PlayerData.Exp * (0.5 * (float)lvl)));
+        return (int)((float)_players[_players.Count - 1].PlayerData.Exp + ((float)_players[_players.Count - 1].PlayerData.Exp * (0.5 * (float)lvl)));
     }
-    
+
     private void OnExpBoosterClicked()
     {
         YandexGame.RewVideoShow(onReward: OnAdvertisingOnComplete);
@@ -113,16 +121,16 @@ public class Exp : MonoBehaviour
         _isBoostActive = true;
         _expBooster.interactable = false;
         _expRate = _boostedExpRate;
-        
+
         Debug.Log("Ваш буст составляет: " + _expRate);
-        
+
         yield return new WaitForSeconds(_boostDuration);
 
         _isBoostActive = false;
         _expBooster.interactable = true;
-        
+
         _expRate = _originalExpRate;
-        
+
         Debug.Log("Ваш буст вернулся в норму: " + _expRate);
     }
 
