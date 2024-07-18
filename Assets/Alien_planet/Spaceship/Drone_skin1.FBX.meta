@@ -1,106 +1,236 @@
 fileFormatVersion: 2
 guid: d4dc7397c79a22c42b01c0044d4fff97
-timeCreated: 1476265955
-licenseType: Store
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Drone_skin1
-    100002: //RootNode
-    100004: flaps019
-    100006: flaps020
-    100008: flaps021
-    100010: flaps022
-    100012: Drone_antenna_skin1
-    100014: Drone_antenna_skin002
-    100016: Drone_antenna_skin1 1
-    400000: Drone_skin1
-    400002: //RootNode
-    400004: flaps019
-    400006: flaps020
-    400008: flaps021
-    400010: flaps022
-    400012: Drone_antenna_skin1
-    400014: Drone_antenna_skin002
-    400016: Drone_antenna_skin1 1
-    2300000: Drone_skin1
-    2300002: flaps019
-    2300004: flaps020
-    2300006: flaps021
-    2300008: flaps022
-    2300010: Drone_antenna_skin1
-    2300012: Drone_antenna_skin002
-    2300014: Drone_antenna_skin1 1
-    3300000: Drone_skin1
-    3300002: flaps019
-    3300004: flaps020
-    3300006: flaps021
-    3300008: flaps022
-    3300010: Drone_antenna_skin1
-    3300012: Drone_antenna_skin002
-    3300014: Drone_antenna_skin1 1
-    4300000: Drone_skin1
-    4300002: flaps019
-    4300004: flaps020
-    4300006: flaps021
-    4300008: flaps022
-    4300010: Drone_antenna_skin1
-    4300012: Drone_antenna_skin002
-    4300014: Drone_antenna_skin1
-    6400000: Drone_skin1
-    6400002: flaps019
-    6400004: flaps020
-    6400006: flaps021
-    6400008: flaps022
-    6400010: Drone_antenna_skin1
-    6400012: Drone_antenna_skin002
-    6400014: Drone_antenna_skin1 1
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Drone_skin1
+  - first:
+      1: 100002
+    second: //RootNode
+  - first:
+      1: 100004
+    second: flaps019
+  - first:
+      1: 100006
+    second: flaps020
+  - first:
+      1: 100008
+    second: flaps021
+  - first:
+      1: 100010
+    second: flaps022
+  - first:
+      1: 100012
+    second: Drone_antenna_skin1
+  - first:
+      1: 100014
+    second: Drone_antenna_skin002
+  - first:
+      1: 100016
+    second: Drone_antenna_skin1 1
+  - first:
+      4: 400000
+    second: Drone_skin1
+  - first:
+      4: 400002
+    second: //RootNode
+  - first:
+      4: 400004
+    second: flaps019
+  - first:
+      4: 400006
+    second: flaps020
+  - first:
+      4: 400008
+    second: flaps021
+  - first:
+      4: 400010
+    second: flaps022
+  - first:
+      4: 400012
+    second: Drone_antenna_skin1
+  - first:
+      4: 400014
+    second: Drone_antenna_skin002
+  - first:
+      4: 400016
+    second: Drone_antenna_skin1 1
+  - first:
+      23: 2300000
+    second: Drone_skin1
+  - first:
+      23: 2300002
+    second: flaps019
+  - first:
+      23: 2300004
+    second: flaps020
+  - first:
+      23: 2300006
+    second: flaps021
+  - first:
+      23: 2300008
+    second: flaps022
+  - first:
+      23: 2300010
+    second: Drone_antenna_skin1
+  - first:
+      23: 2300012
+    second: Drone_antenna_skin002
+  - first:
+      23: 2300014
+    second: Drone_antenna_skin1 1
+  - first:
+      33: 3300000
+    second: Drone_skin1
+  - first:
+      33: 3300002
+    second: flaps019
+  - first:
+      33: 3300004
+    second: flaps020
+  - first:
+      33: 3300006
+    second: flaps021
+  - first:
+      33: 3300008
+    second: flaps022
+  - first:
+      33: 3300010
+    second: Drone_antenna_skin1
+  - first:
+      33: 3300012
+    second: Drone_antenna_skin002
+  - first:
+      33: 3300014
+    second: Drone_antenna_skin1 1
+  - first:
+      43: 4300000
+    second: Drone_skin1
+  - first:
+      43: 4300002
+    second: flaps019
+  - first:
+      43: 4300004
+    second: flaps020
+  - first:
+      43: 4300006
+    second: flaps021
+  - first:
+      43: 4300008
+    second: flaps022
+  - first:
+      43: 4300010
+    second: Drone_antenna_skin1
+  - first:
+      43: 4300012
+    second: Drone_antenna_skin002
+  - first:
+      43: 4300014
+    second: Drone_antenna_skin1
+  - first:
+      64: 6400000
+    second: Drone_skin1
+  - first:
+      64: 6400002
+    second: flaps019
+  - first:
+      64: 6400004
+    second: flaps020
+  - first:
+      64: 6400006
+    second: flaps021
+  - first:
+      64: 6400008
+    second: flaps022
+  - first:
+      64: 6400010
+    second: Drone_antenna_skin1
+  - first:
+      64: 6400012
+    second: Drone_antenna_skin002
+  - first:
+      64: 6400014
+    second: Drone_antenna_skin1 1
+  externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 2
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 1
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -110,11 +240,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

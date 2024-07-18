@@ -1,0 +1,163 @@
+Textures optimization started at 14.05.2024 20:14:03
+---------------------------------------
+Assets\!YaAssets\btn_icon_ad.png
+Assets\TextMesh Pro\Sprites\EmojiOne.png
+Assets\!YaAssets\Leaderboard\Sprites\icon_ranking.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\btn_close.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\icon_player.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\medal_1.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\medal_2.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\medal_3.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\substrate.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\substrate_text.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_player.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_players.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_points.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_points_player.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Ad.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_DebuggingYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_GetPlayerYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_ImageLoadYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_InfoYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_LanguageYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_LeaderboardYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_PaymentsYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_PromptYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_ReviewYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_ScriptYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_ViewingAdsYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_YandexGame.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\substrate_text.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\sub_players.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\sub_players_frame.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\sub_points.png
+---------------------------------------
+Textures optimization finished at 14.05.2024 20:14:10
+31 files has been optimized.
+
+
+Textures optimization started at 15.05.2024 13:21:02
+---------------------------------------
+Assets\!YaAssets\btn_icon_ad.png
+Assets\TextMesh Pro\Sprites\EmojiOne.png
+Assets\!YaAssets\Leaderboard\Sprites\icon_ranking.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\btn_close.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\icon_player.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\medal_1.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\medal_2.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\medal_3.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\substrate.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\substrate_text.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_player.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_players.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_points.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_points_player.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Ad.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_DebuggingYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_GetPlayerYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_ImageLoadYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_InfoYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_LanguageYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_LeaderboardYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_PaymentsYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_PromptYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_ReviewYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_ScriptYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_ViewingAdsYG.png
+Assets\YandexGame\ScriptsYG\Editor\Icons\Icon_YandexGame.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\substrate_text.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\sub_players.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\sub_players_frame.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\sub_points.png
+---------------------------------------
+Textures optimization finished at 15.05.2024 13:21:05
+31 files has been optimized.
+
+
+Textures optimization started at 15.05.2024 13:21:36
+---------------------------------------
+Assets\!YaAssets\Leaderboard\Sprites\icon_ranking.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\btn_close.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\icon_player.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\medal_1.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\medal_2.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\medal_3.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\substrate.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\substrate_text.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_player.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_players.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_points.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_points_player.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\substrate_text.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\sub_players.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\sub_players_frame.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\sub_points.png
+---------------------------------------
+Textures optimization finished at 15.05.2024 13:21:38
+16 files has been optimized.
+
+
+Textures optimization started at 15.05.2024 13:21:55
+---------------------------------------
+Assets\!YaAssets\btn_icon_ad.png
+Assets\!YaAssets\Leaderboard\Sprites\icon_ranking.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\btn_close.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\icon_player.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\medal_1.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\medal_2.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\medal_3.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\substrate.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\substrate_text.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_player.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_players.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_points.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\sub_points_player.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\substrate_text.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\sub_players.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\sub_players_frame.png
+Assets\!YaAssets\Leaderboard\Sprites\panel\white\sub_points.png
+---------------------------------------
+Textures optimization finished at 15.05.2024 13:21:56
+17 files has been optimized.
+
+
+SpriteAtlas optimization started at 15.05.2024 13:40:28
+---------------------------------------
+Assets\TestAssets\New Sprite Atlas.spriteatlasv2
+---------------------------------------
+Textures optimization finished at 15.05.2024 13:40:28
+1 files has been optimized.
+
+
+SpriteAtlas optimization started at 15.05.2024 13:40:37
+---------------------------------------
+Assets\TestAssets\New Sprite Atlas.spriteatlasv2
+---------------------------------------
+Textures optimization finished at 15.05.2024 13:40:37
+1 files has been optimized.
+
+
+SpriteAtlas optimization started at 15.05.2024 13:40:54
+---------------------------------------
+Assets\TestAssets\New Sprite Atlas.spriteatlasv2
+---------------------------------------
+Textures optimization finished at 15.05.2024 13:40:54
+1 files has been optimized.
+
+
+SpriteAtlas optimization started at 15.05.2024 13:41:02
+---------------------------------------
+Assets\TestAssets\New Sprite Atlas.spriteatlasv2
+---------------------------------------
+Textures optimization finished at 15.05.2024 13:41:02
+1 files has been optimized.
+
+
+SpriteAtlas optimization started at 15.05.2024 13:41:36
+---------------------------------------
+Assets\TestAssets\New Sprite Atlas.spriteatlasv2
+---------------------------------------
+Textures optimization finished at 15.05.2024 13:41:36
+1 files has been optimized.
+
+

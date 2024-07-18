@@ -1,0 +1,538 @@
+Models optimization started at 7/18/2024 3:36:24 PM
+---------------------------------------
+Assets/Alien_planet/Alien_structures/Alien_blockA.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockA_skin2.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockB.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockB_skin2.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockC.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockC_skin2.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockD.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockD_skin2.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockE.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockE_skin2.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockF.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockF_skin2.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockG.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockG_skin2.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockH.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockH_skin2.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockI.FBX
+Assets/Alien_planet/Alien_structures/Alien_blockI_skin2.FBX
+Assets/Alien_planet/Alien_structures/Alien_circle.FBX
+Assets/Alien_planet/Alien_structures/Alien_circle_skin2.FBX
+Assets/Alien_planet/Alien_structures/Alien_sphere.FBX
+Assets/Alien_planet/Alien_structures/Alien_sphere_skin2.FBX
+Assets/Alien_planet/Spaceship/Drone_skin1.FBX
+Assets/Alien_planet/Spaceship/Drone_skin2.FBX
+Assets/Alien_planet/Spaceship/Drone_skin3.FBX
+Assets/Alien_planet/Spaceship/Spaceship_B_skin1.FBX
+Assets/Alien_planet/Spaceship/Spaceship_B_skin2.FBX
+Assets/Alien_planet/Spaceship/Spaceship_B_skin3.FBX
+Assets/Alien_planet/Spaceship/Spaceship_C_skin1.FBX
+Assets/Alien_planet/Spaceship/Spaceship_C_skin2.FBX
+Assets/Alien_planet/Spaceship/Spaceship_C_skin3.FBX
+Assets/Alien_planet/Spaceship/Spaceship_D_skin1.FBX
+Assets/Alien_planet/Spaceship/Spaceship_D_skin2.FBX
+Assets/Alien_planet/Spaceship/Spaceship_D_skin3.FBX
+Assets/Alien_planet/Spaceship/Spaceship_animated.FBX
+Assets/Alien_planet/Spaceship/Spaceship_skin1.FBX
+Assets/Alien_planet/Spaceship/Spaceship_skin2.FBX
+Assets/Alien_planet/Spaceship/Spaceship_skin3.FBX
+Assets/Alien_planet/Terrain/Mesa_dry.FBX
+Assets/Alien_planet/Terrain/Mesa_dryB.FBX
+Assets/Alien_planet/Terrain/Mesa_gas.FBX
+Assets/Alien_planet/Terrain/Mesa_gasB.FBX
+Assets/Alien_planet/Terrain/Mesa_ice.FBX
+Assets/Alien_planet/Terrain/Mesa_iceB.FBX
+Assets/Alien_planet/Terrain/Mesa_lush.FBX
+Assets/Alien_planet/Terrain/Mesa_lushB.FBX
+Assets/Alien_planet/Terrain/Terrain_a_dry.FBX
+Assets/Alien_planet/Terrain/Terrain_a_gas.FBX
+Assets/Alien_planet/Terrain/Terrain_a_ice.FBX
+Assets/Alien_planet/Terrain/Terrain_a_lush.FBX
+Assets/Alien_planet/Terrain/Terrain_b_dry.FBX
+Assets/Alien_planet/Terrain/Terrain_b_gas.FBX
+Assets/Alien_planet/Terrain/Terrain_b_ice.FBX
+Assets/Alien_planet/Terrain/Terrain_b_lush.FBX
+Assets/Alien_planet/Terrain/Terrain_c_dry.FBX
+Assets/Alien_planet/Terrain/Terrain_c_gas.FBX
+Assets/Alien_planet/Terrain/Terrain_c_ice.FBX
+Assets/Alien_planet/Terrain/Terrain_c_lush.FBX
+Assets/Alien_planet/Terrain/Terrain_d_dry.FBX
+Assets/Alien_planet/Terrain/Terrain_d_gas.FBX
+Assets/Alien_planet/Terrain/Terrain_d_ice.FBX
+Assets/Alien_planet/Terrain/Terrain_d_lush.FBX
+Assets/RPG Monster DUO PBR Polyart/Meshes/SlimeMesh.fbx
+Assets/RPG Monster DUO PBR Polyart/Meshes/SlimePolyartMesh.fbx
+Assets/RPG Monster DUO PBR Polyart/Meshes/StageMesh.fbx
+Assets/RPG Monster DUO PBR Polyart/Meshes/TurtleShellMesh.fbx
+Assets/RPG Monster DUO PBR Polyart/Meshes/TurtleShellPolyartMesh.fbx
+Assets/Alien_planet/Foliage/Dry/Dry_bulbous_plant.FBX
+Assets/Alien_planet/Foliage/Dry/Dry_deadtree.FBX
+Assets/Alien_planet/Foliage/Dry/Dry_deadtreeb.FBX
+Assets/Alien_planet/Foliage/Dry/Dry_grass.FBX
+Assets/Alien_planet/Foliage/Dry/Dry_plant.FBX
+Assets/Alien_planet/Foliage/Dry/Dry_plant_tall.FBX
+Assets/Alien_planet/Foliage/Dry/Dry_root.FBX
+Assets/Alien_planet/Foliage/Dry/Dry_root_medium.FBX
+Assets/Alien_planet/Foliage/Dry/Dry_root_small.FBX
+Assets/Alien_planet/Foliage/Dry/Dry_tree.FBX
+Assets/Alien_planet/Foliage/Dry/Dry_treeb.FBX
+Assets/Alien_planet/Foliage/Dry/Dry_treec.FBX
+Assets/Alien_planet/Foliage/Gas/Gas_grass.FBX
+Assets/Alien_planet/Foliage/Gas/Gas_grassb.FBX
+Assets/Alien_planet/Foliage/Gas/Gas_mushroom_big.FBX
+Assets/Alien_planet/Foliage/Gas/Gas_mushroom_clump.FBX
+Assets/Alien_planet/Foliage/Gas/Gas_mushroom_clumpb.FBX
+Assets/Alien_planet/Foliage/Gas/Gas_mushroom_medium.FBX
+Assets/Alien_planet/Foliage/Gas/Gas_mushroom_mediumB.FBX
+Assets/Alien_planet/Foliage/Gas/Gas_mushroom_small.FBX
+Assets/Alien_planet/Foliage/Gas/Gas_plant.FBX
+Assets/Alien_planet/Foliage/Gas/Gas_plantb.FBX
+Assets/Alien_planet/Foliage/Gas/Gas_plantc.FBX
+Assets/Alien_planet/Foliage/Gas/Gas_plantd.FBX
+Assets/Alien_planet/Foliage/Gas/Gas_plante.FBX
+Assets/Alien_planet/Foliage/Gas/Gas_plantf.FBX
+Assets/Alien_planet/Foliage/Ice/Ice_Grass.FBX
+Assets/Alien_planet/Foliage/Ice/Ice_Grassb.FBX
+Assets/Alien_planet/Foliage/Ice/Ice_dead_tree.FBX
+Assets/Alien_planet/Foliage/Ice/Ice_dead_treeB.FBX
+Assets/Alien_planet/Foliage/Ice/Ice_plant.FBX
+Assets/Alien_planet/Foliage/Ice/Ice_plantb.FBX
+Assets/Alien_planet/Foliage/Ice/Ice_shrub.FBX
+Assets/Alien_planet/Foliage/Ice/Ice_tree.FBX
+Assets/Alien_planet/Foliage/Ice/Ice_treeB.FBX
+Assets/Alien_planet/Foliage/Ice/Ice_treeC.FBX
+Assets/Alien_planet/Foliage/Lush/Lush_bulbous_plant.FBX
+Assets/Alien_planet/Foliage/Lush/Lush_grass.FBX
+Assets/Alien_planet/Foliage/Lush/Lush_grassb.FBX
+Assets/Alien_planet/Foliage/Lush/Lush_plant.FBX
+Assets/Alien_planet/Foliage/Lush/Root_lush.FBX
+Assets/Alien_planet/Foliage/Lush/Root_medium_lush.FBX
+Assets/Alien_planet/Foliage/Lush/Root_small_lush.FBX
+Assets/Alien_planet/Foliage/Lush/Tree_lush.FBX
+Assets/Alien_planet/Foliage/Lush/Tree_lushB.FBX
+Assets/Alien_planet/Foliage/Lush/giant_flowerB_lush.FBX
+Assets/Alien_planet/Foliage/Lush/giant_flower_lush.FBX
+Assets/Alien_planet/Foliage/Lush/tall_lush_plant.FBX
+Assets/Alien_planet/Rocks/Dry/Crystal_clump.FBX
+Assets/Alien_planet/Rocks/Dry/Crystal_clump_small.FBX
+Assets/Alien_planet/Rocks/Dry/Crystal_large.FBX
+Assets/Alien_planet/Rocks/Dry/MountainA_dry.FBX
+Assets/Alien_planet/Rocks/Dry/MountainB_dry.FBX
+Assets/Alien_planet/Rocks/Dry/cliff_arch_dry.FBX
+Assets/Alien_planet/Rocks/Dry/cliff_dry.FBX
+Assets/Alien_planet/Rocks/Dry/cliffb_dry.FBX
+Assets/Alien_planet/Rocks/Dry/cliffc_dry.FBX
+Assets/Alien_planet/Rocks/Dry/cliffd_dry.FBX
+Assets/Alien_planet/Rocks/Dry/dry_flat_rockc.FBX
+Assets/Alien_planet/Rocks/Dry/flat_bigrock_dry.FBX
+Assets/Alien_planet/Rocks/Dry/flat_rock_dry.FBX
+Assets/Alien_planet/Rocks/Dry/flat_rockb_dry.FBX
+Assets/Alien_planet/Rocks/Dry/medium_rockb_dry.FBX
+Assets/Alien_planet/Rocks/Dry/small_rocks_dry.FBX
+Assets/Alien_planet/Rocks/Dry/tall_rock_dry.FBX
+Assets/Alien_planet/Rocks/Dry/tall_rockb_dry.FBX
+Assets/Alien_planet/Rocks/Gas/Gas_MountainA.FBX
+Assets/Alien_planet/Rocks/Gas/Gas_MountainB.FBX
+Assets/Alien_planet/Rocks/Gas/Gas_cliff.FBX
+Assets/Alien_planet/Rocks/Gas/Gas_cliffb.FBX
+Assets/Alien_planet/Rocks/Gas/Gas_cliffc.FBX
+Assets/Alien_planet/Rocks/Gas/Gas_cliffd.FBX
+Assets/Alien_planet/Rocks/Gas/Gas_cliffe.FBX
+Assets/Alien_planet/Rocks/Gas/Gas_medium_rock.FBX
+Assets/Alien_planet/Rocks/Gas/Gas_medium_rockB.FBX
+Assets/Alien_planet/Rocks/Gas/Gas_medium_rockC.FBX
+Assets/Alien_planet/Rocks/Gas/Gas_small_rock.FBX
+Assets/Alien_planet/Rocks/Gas/Gas_small_rockb.FBX
+Assets/Alien_planet/Rocks/Gas/Gas_smaller_rocks.FBX
+Assets/Alien_planet/Rocks/Ice/Crystal_clump_small_ice.FBX
+Assets/Alien_planet/Rocks/Ice/Crystal_large_ice.FBX
+Assets/Alien_planet/Rocks/Ice/Crystal_tall_ice.FBX
+Assets/Alien_planet/Rocks/Ice/MountainA_ice.FBX
+Assets/Alien_planet/Rocks/Ice/MoutainB_ice.FBX
+Assets/Alien_planet/Rocks/Ice/Tall_rock_ice.FBX
+Assets/Alien_planet/Rocks/Ice/bigrock_ice.FBX
+Assets/Alien_planet/Rocks/Ice/cliff_ice.FBX
+Assets/Alien_planet/Rocks/Ice/cliffb_ice.FBX
+Assets/Alien_planet/Rocks/Ice/cliffc_ice.FBX
+Assets/Alien_planet/Rocks/Ice/cliffd_ice.FBX
+Assets/Alien_planet/Rocks/Ice/flat_bigrock_ice.FBX
+Assets/Alien_planet/Rocks/Ice/flat_rock_ice.FBX
+Assets/Alien_planet/Rocks/Ice/flat_rockb_ice.FBX
+Assets/Alien_planet/Rocks/Ice/flat_rockc_ice.FBX
+Assets/Alien_planet/Rocks/Lush/Cliff_lush.FBX
+Assets/Alien_planet/Rocks/Lush/Cliffb_lush.FBX
+Assets/Alien_planet/Rocks/Lush/Cliffc_lush.FBX
+Assets/Alien_planet/Rocks/Lush/Cliffd_lush.FBX
+Assets/Alien_planet/Rocks/Lush/Cliffe_lush.FBX
+Assets/Alien_planet/Rocks/Lush/MountainA_lush.FBX
+Assets/Alien_planet/Rocks/Lush/MountainB_lush.FBX
+Assets/Alien_planet/Rocks/Lush/Tall_rockB_lush.FBX
+Assets/Alien_planet/Rocks/Lush/Tall_rock_lush.FBX
+Assets/Alien_planet/Rocks/Lush/flat_rock_lush.FBX
+Assets/Alien_planet/Rocks/Lush/flat_rockb_lush.FBX
+Assets/Alien_planet/Rocks/Lush/flat_rockc_lush.FBX
+Assets/Alien_planet/Rocks/Lush/medium_rock_lush.FBX
+Assets/Alien_planet/Rocks/Lush/small_rocks_lush.FBX
+Assets/FXIFIED/common/Extras/Grid.FBX
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Attack01_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Attack02_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Die_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Dizzy_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/GetHit_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/IdleBattle_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/IdleNormal_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Run_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/SenseSomethingRoutine_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/SenseSomethingStart_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Taunt_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Victory_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/WalkBack_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/WalkLeft_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/WalkRight_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Walk_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/Attack01_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/Attack02_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/DefendHit_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/Defend_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/Die_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/Dizzy_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/GetHit_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/IdleBattle_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/IdleNormal_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/Run_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/SenseSomethingRT_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/SenseSomethingStart_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/Taunt_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/Victory_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/WalkBack_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/WalkLeft_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/WalkRight_TurtleShell_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/Walk_TurtleShell_Anim.fbx
+Assets/Creatures/Characters/Dog Bark Cute Series/FBX/Dog Bark.FBX
+Assets/Creatures/Characters/Dog Bark Cute Series/FBX/Dog Bark@Bite Attack.FBX
+Assets/Creatures/Characters/Dog Bark Cute Series/FBX/Dog Bark@Die.FBX
+Assets/Creatures/Characters/Dog Bark Cute Series/FBX/Dog Bark@Idle.FBX
+Assets/Creatures/Characters/Dog Bark Cute Series/FBX/Dog Bark@Jump In Place.FBX
+Assets/Creatures/Characters/Dog Bark Cute Series/FBX/Dog Bark@Run Forward In Place.FBX
+Assets/Creatures/Characters/Icicle Cute Series/FBX/Icicle.FBX
+Assets/Creatures/Characters/Icicle Cute Series/FBX/Icicle@Die.FBX
+Assets/Creatures/Characters/Icicle Cute Series/FBX/Icicle@Fly Forward In Place.FBX
+Assets/Creatures/Characters/Icicle Cute Series/FBX/Icicle@Idle.FBX
+Assets/Creatures/Characters/Icicle Cute Series/FBX/Icicle@Slash Attack.FBX
+Assets/Creatures/Characters/Phantom Cute Series/FBX/Phantom.FBX
+Assets/Creatures/Characters/Phantom Cute Series/FBX/Phantom@Die.FBX
+Assets/Creatures/Characters/Phantom Cute Series/FBX/Phantom@Fly Forward In Place.FBX
+Assets/Creatures/Characters/Phantom Cute Series/FBX/Phantom@Idle.FBX
+Assets/Creatures/Characters/Phantom Cute Series/FBX/Phantom@Projectile Attack.FBX
+Assets/Creatures/Characters/Soul Mage Cute Series/FBX/Soul Mage.FBX
+Assets/Creatures/Characters/Soul Mage Cute Series/FBX/Soul Mage@Clap Attack.FBX
+Assets/Creatures/Characters/Soul Mage Cute Series/FBX/Soul Mage@Die.FBX
+Assets/Creatures/Characters/Soul Mage Cute Series/FBX/Soul Mage@Fly Forward In Place.FBX
+Assets/Creatures/Characters/Soul Mage Cute Series/FBX/Soul Mage@Idle.FBX
+Assets/Creatures/Enemies/Angel Mage Cute Series/FBX/Angel Mage.FBX
+Assets/Creatures/Enemies/Angel Mage Cute Series/FBX/Angel Mage@Die.FBX
+Assets/Creatures/Enemies/Angel Mage Cute Series/FBX/Angel Mage@Idle.FBX
+Assets/Creatures/Enemies/Angel Mage Cute Series/FBX/Angel Mage@Projectile Attack.FBX
+Assets/Creatures/Enemies/Bumble Cute Series/FBX/Bumble.FBX
+Assets/Creatures/Enemies/Bumble Cute Series/FBX/Bumble@Die.FBX
+Assets/Creatures/Enemies/Bumble Cute Series/FBX/Bumble@Idle.FBX
+Assets/Creatures/Enemies/Bumble Cute Series/FBX/Bumble@Sting Attack.FBX
+Assets/Creatures/Enemies/Cacti Cute Series/FBX/Cacti.FBX
+Assets/Creatures/Enemies/Cacti Cute Series/FBX/Cacti@Die.FBX
+Assets/Creatures/Enemies/Cacti Cute Series/FBX/Cacti@Idle.FBX
+Assets/Creatures/Enemies/Cacti Cute Series/FBX/Cacti@Projectile Attack.FBX
+Assets/Creatures/Enemies/Flower Pot Monster Cute Series/FBX/Flower Pot Monster.FBX
+Assets/Creatures/Enemies/Flower Pot Monster Cute Series/FBX/Flower Pot Monster@Bite Attack.FBX
+Assets/Creatures/Enemies/Flower Pot Monster Cute Series/FBX/Flower Pot Monster@Die.FBX
+Assets/Creatures/Enemies/Flower Pot Monster Cute Series/FBX/Flower Pot Monster@Idle.FBX
+Assets/Creatures/Enemies/Ghost Cute Series/FBX/Ghost.FBX
+Assets/Creatures/Enemies/Ghost Cute Series/FBX/Ghost@Attack.FBX
+Assets/Creatures/Enemies/Ghost Cute Series/FBX/Ghost@Die.FBX
+Assets/Creatures/Enemies/Ghost Cute Series/FBX/Ghost@Idle.FBX
+Assets/Creatures/Enemies/Hermit King Cute Series/FBX/Hermit King.FBX
+Assets/Creatures/Enemies/Hermit King Cute Series/FBX/Hermit King@Die.FBX
+Assets/Creatures/Enemies/Hermit King Cute Series/FBX/Hermit King@Idle.FBX
+Assets/Creatures/Enemies/Hermit King Cute Series/FBX/Hermit King@Slash Attack.FBX
+Assets/Creatures/Enemies/Shell Cute Series/FBX/Shell.FBX
+Assets/Creatures/Enemies/Shell Cute Series/FBX/Shell@Bite Attack.FBX
+Assets/Creatures/Enemies/Shell Cute Series/FBX/Shell@Die.FBX
+Assets/Creatures/Enemies/Shell Cute Series/FBX/Shell@Idle.FBX
+Assets/Creatures/Enemies/Skeleton Cute Series/FBX/Skeleton.FBX
+Assets/Creatures/Enemies/Skeleton Cute Series/FBX/Skeleton@Die.FBX
+Assets/Creatures/Enemies/Skeleton Cute Series/FBX/Skeleton@Idle.FBX
+Assets/Creatures/Enemies/Skeleton Cute Series/FBX/Skeleton@Left Slash Attack.FBX
+Assets/Creatures/Enemies/Skeleton Mage Cute Series/FBX/Skeleton Mage.FBX
+Assets/Creatures/Enemies/Skeleton Mage Cute Series/FBX/Skeleton Mage@Die.FBX
+Assets/Creatures/Enemies/Skeleton Mage Cute Series/FBX/Skeleton Mage@Idle.FBX
+Assets/Creatures/Enemies/Skeleton Mage Cute Series/FBX/Skeleton Mage@Left Slash Attack.FBX
+Assets/Creatures/Enemies/Spider Cute Series/FBX/Spider.FBX
+Assets/Creatures/Enemies/Spider Cute Series/FBX/Spider@Die.FBX
+Assets/Creatures/Enemies/Spider Cute Series/FBX/Spider@Idle.FBX
+Assets/Creatures/Enemies/Spider Cute Series/FBX/Spider@Projectile Attack.FBX
+Assets/Creatures/Enemies/Spider King Cute Series/FBX/Spider King.FBX
+Assets/Creatures/Enemies/Spider King Cute Series/FBX/Spider King@Bite Attack.FBX
+Assets/Creatures/Enemies/Spider King Cute Series/FBX/Spider King@Die.FBX
+Assets/Creatures/Enemies/Spider King Cute Series/FBX/Spider King@Idle.FBX
+Assets/Creatures/Enemies/Spook Cute Series/FBX/Spook.FBX
+Assets/Creatures/Enemies/Spook Cute Series/FBX/Spook@Die.FBX
+Assets/Creatures/Enemies/Spook Cute Series/FBX/Spook@Idle.FBX
+Assets/Creatures/Enemies/Spook Cute Series/FBX/Spook@Projectile Attack.FBX
+Assets/Creatures/Enemies/Vampire Bat Cute Series/FBX/Vampire Bat.FBX
+Assets/Creatures/Enemies/Vampire Bat Cute Series/FBX/Vampire Bat@Bite Attack.FBX
+Assets/Creatures/Enemies/Vampire Bat Cute Series/FBX/Vampire Bat@Die.FBX
+Assets/Creatures/Enemies/Vampire Bat Cute Series/FBX/Vampire Bat@Idle.FBX
+Assets/Creatures/Enemies/Werewolf Cute Series/FBX/Werewolf.FBX
+Assets/Creatures/Enemies/Werewolf Cute Series/FBX/Werewolf@Die.FBX
+Assets/Creatures/Enemies/Werewolf Cute Series/FBX/Werewolf@Idle.FBX
+Assets/Creatures/Enemies/Werewolf Cute Series/FBX/Werewolf@Pounce Smash Attack In Place.FBX
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Meshes/FX_MSH_Ball_AA.FBX
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Meshes/FX_MSH_Coin_AA.FBX
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Meshes/FX_MSH_CylinderHalf_AC.FBX
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Meshes/FX_MSH_Cylinder_AA.FBX
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Meshes/FX_MSH_Sphere_Half_AA.FBX
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Meshes/FX_MSH_TrafficCone_AA.FBX
+Assets/Creatures/Characters/Cat Evolution/Cat Bolt Cute Series/FBX/Cat Bolt.FBX
+Assets/Creatures/Characters/Cat Evolution/Cat Bolt Cute Series/FBX/Cat Bolt@Bite Attack.FBX
+Assets/Creatures/Characters/Cat Evolution/Cat Bolt Cute Series/FBX/Cat Bolt@Die.FBX
+Assets/Creatures/Characters/Cat Evolution/Cat Bolt Cute Series/FBX/Cat Bolt@Idle.FBX
+Assets/Creatures/Characters/Cat Evolution/Cat Bolt Cute Series/FBX/Cat Bolt@Jump In Place.FBX
+Assets/Creatures/Characters/Cat Evolution/Cat Bolt Cute Series/FBX/Cat Bolt@Run Forward In Place.FBX
+Assets/Creatures/Characters/Cat Evolution/Cat Lightning Cute Series/FBX/Cat Lightning.FBX
+Assets/Creatures/Characters/Cat Evolution/Cat Lightning Cute Series/FBX/Cat Lightning@Bite Attack.FBX
+Assets/Creatures/Characters/Cat Evolution/Cat Lightning Cute Series/FBX/Cat Lightning@Die.FBX
+Assets/Creatures/Characters/Cat Evolution/Cat Lightning Cute Series/FBX/Cat Lightning@Idle.FBX
+Assets/Creatures/Characters/Cat Evolution/Cat Lightning Cute Series/FBX/Cat Lightning@Jump In Place.FBX
+Assets/Creatures/Characters/Cat Evolution/Cat Lightning Cute Series/FBX/Cat Lightning@Run Forward In Place.FBX
+Assets/Creatures/Characters/Death Evolution/Death Mage Cute Series/FBX/Death Mage.FBX
+Assets/Creatures/Characters/Death Evolution/Death Mage Cute Series/FBX/Death Mage@Die.FBX
+Assets/Creatures/Characters/Death Evolution/Death Mage Cute Series/FBX/Death Mage@Fly Forward In Place.FBX
+Assets/Creatures/Characters/Death Evolution/Death Mage Cute Series/FBX/Death Mage@Idle.FBX
+Assets/Creatures/Characters/Death Evolution/Death Mage Cute Series/FBX/Death Mage@Projectile Attack.FBX
+Assets/Creatures/Characters/Death Evolution/Nightmare Cute Series/FBX/Nightmare.FBX
+Assets/Creatures/Characters/Death Evolution/Nightmare Cute Series/FBX/Nightmare@Die.FBX
+Assets/Creatures/Characters/Death Evolution/Nightmare Cute Series/FBX/Nightmare@Fly Forward In Place.FBX
+Assets/Creatures/Characters/Death Evolution/Nightmare Cute Series/FBX/Nightmare@Head Attack.FBX
+Assets/Creatures/Characters/Death Evolution/Nightmare Cute Series/FBX/Nightmare@Idle.FBX
+Assets/Creatures/Characters/Dragons Evolution/Dragon Fire Cute Series/FBX/Dragon Fire.FBX
+Assets/Creatures/Characters/Dragons Evolution/Dragon Fire Cute Series/FBX/Dragon Fire@Bite Attack.FBX
+Assets/Creatures/Characters/Dragons Evolution/Dragon Fire Cute Series/FBX/Dragon Fire@Die.FBX
+Assets/Creatures/Characters/Dragons Evolution/Dragon Fire Cute Series/FBX/Dragon Fire@Fly Forward In Place.FBX
+Assets/Creatures/Characters/Dragons Evolution/Dragon Fire Cute Series/FBX/Dragon Fire@Fly Idle.FBX
+Assets/Creatures/Characters/Dragons Evolution/Dragon Nightfall Cute Series/FBX/Dragon Nightfall.FBX
+Assets/Creatures/Characters/Dragons Evolution/Dragon Nightfall Cute Series/FBX/Dragon Nightfall@Bite Attack.FBX
+Assets/Creatures/Characters/Dragons Evolution/Dragon Nightfall Cute Series/FBX/Dragon Nightfall@Die.FBX
+Assets/Creatures/Characters/Dragons Evolution/Dragon Nightfall Cute Series/FBX/Dragon Nightfall@Fly Forward In Place.FBX
+Assets/Creatures/Characters/Dragons Evolution/Dragon Nightfall Cute Series/FBX/Dragon Nightfall@Idle.FBX
+Assets/Creatures/Characters/FireEvolution/Fire Cute Series/FBX/Fire.FBX
+Assets/Creatures/Characters/FireEvolution/Fire Cute Series/FBX/Fire@Bite Attack.FBX
+Assets/Creatures/Characters/FireEvolution/Fire Cute Series/FBX/Fire@Die.FBX
+Assets/Creatures/Characters/FireEvolution/Fire Cute Series/FBX/Fire@Fly Forward In Place.FBX
+Assets/Creatures/Characters/FireEvolution/Fire Cute Series/FBX/Fire@Idle.FBX
+Assets/Creatures/Characters/FireEvolution/Flame Cute Series/FBX/Flame.FBX
+Assets/Creatures/Characters/FireEvolution/Flame Cute Series/FBX/Flame@Clap Attack.FBX
+Assets/Creatures/Characters/FireEvolution/Flame Cute Series/FBX/Flame@Die.FBX
+Assets/Creatures/Characters/FireEvolution/Flame Cute Series/FBX/Flame@Fly Forward In Place.FBX
+Assets/Creatures/Characters/FireEvolution/Flame Cute Series/FBX/Flame@Idle.FBX
+Assets/Creatures/Characters/Shadow Evolution/Egg Cute Series/FBX/Egglet.FBX
+Assets/Creatures/Characters/Shadow Evolution/Egg Cute Series/FBX/Egglet@Die.FBX
+Assets/Creatures/Characters/Shadow Evolution/Egg Cute Series/FBX/Egglet@Head Attack.FBX
+Assets/Creatures/Characters/Shadow Evolution/Egg Cute Series/FBX/Egglet@Idle.FBX
+Assets/Creatures/Characters/Shadow Evolution/Egg Cute Series/FBX/Egglet@Jump Forward In Place.FBX
+Assets/Creatures/Characters/Shadow Evolution/Shade Cute Series/FBX/Shade.FBX
+Assets/Creatures/Characters/Shadow Evolution/Shade Cute Series/FBX/Shade@Claw Right Attack.FBX
+Assets/Creatures/Characters/Shadow Evolution/Shade Cute Series/FBX/Shade@Die.FBX
+Assets/Creatures/Characters/Shadow Evolution/Shade Cute Series/FBX/Shade@Idle.FBX
+Assets/Creatures/Characters/Shadow Evolution/Shade Cute Series/FBX/Shade@Run Forward In Place.FBX
+Assets/Creatures/Characters/Shadow Evolution/Shadow Cute Series/FBX/Shadow.FBX
+Assets/Creatures/Characters/Shadow Evolution/Shadow Cute Series/FBX/Shadow@Die.FBX
+Assets/Creatures/Characters/Shadow Evolution/Shadow Cute Series/FBX/Shadow@Idle.FBX
+Assets/Creatures/Characters/Shadow Evolution/Shadow Cute Series/FBX/Shadow@Right Slash Attack.FBX
+Assets/Creatures/Characters/Shadow Evolution/Shadow Cute Series/FBX/Shadow@Run Forward In Place.FBX
+Assets/Creatures/Characters/Spider Evolution/Creeper Cute Series/FBX/Creeper.FBX
+Assets/Creatures/Characters/Spider Evolution/Creeper Cute Series/FBX/Creeper@Bite Attack In Place.FBX
+Assets/Creatures/Characters/Spider Evolution/Creeper Cute Series/FBX/Creeper@Die.FBX
+Assets/Creatures/Characters/Spider Evolution/Creeper Cute Series/FBX/Creeper@Idle.FBX
+Assets/Creatures/Characters/Spider Evolution/Creeper Cute Series/FBX/Creeper@Jump In Place.FBX
+Assets/Creatures/Characters/Spider Evolution/Creeper Cute Series/FBX/Creeper@Walk Forward Fast In Place.FBX
+Assets/Creatures/Characters/Spider Evolution/Spider Toxin Cute Series/FBX/Spider Toxin.FBX
+Assets/Creatures/Characters/Spider Evolution/Spider Toxin Cute Series/FBX/Spider Toxin@Bite Attack.FBX
+Assets/Creatures/Characters/Spider Evolution/Spider Toxin Cute Series/FBX/Spider Toxin@Crawl Forward Fast In Place.FBX
+Assets/Creatures/Characters/Spider Evolution/Spider Toxin Cute Series/FBX/Spider Toxin@Die.FBX
+Assets/Creatures/Characters/Spider Evolution/Spider Toxin Cute Series/FBX/Spider Toxin@Idle.FBX
+---------------------------------------
+Models optimization finished at 7/18/2024 3:37:21 PM
+361 files has been optimized.
+
+
+Textures optimization started at 7/18/2024 3:42:55 PM
+---------------------------------------
+Assets/FXIFIED/Stylized VFX Free Pack/Scenes/Lightmap/Lightmap-0_comp_light.exr
+Assets/FXIFIED/Stylized VFX Free Pack/Scenes/Lightmap/ReflectionProbe-0.exr
+Assets/TextMesh Pro/Examples & Extras/Textures/Brushed Metal 3.jpg
+(520, 390) | (520, 392) Assets/TextMesh Pro/Examples & Extras/Textures/Floor Cement.jpg
+Assets/TextMesh Pro/Examples & Extras/Textures/Floor Tiles 1 - diffuse.jpg
+Assets/TextMesh Pro/Examples & Extras/Textures/Fruit Jelly (B&W).jpg
+Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Diagonal (Color).jpg
+Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Horizontal (Color).jpg
+Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Vertical (Color).jpg
+Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg
+Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_normal.jpg
+Assets/TextMesh Pro/Examples & Extras/Textures/Sunny Days - Seamless.jpg
+Assets/Plugins/Demigiant/DOTween/Editor/Imgs/Header.jpg
+Assets/!YaAssets/btn_icon_ad.png
+Assets/RPG Monster DUO PBR Polyart/Textures/Albedo.png
+Assets/RPG Monster DUO PBR Polyart/Textures/Emission.png
+Assets/RPG Monster DUO PBR Polyart/Textures/Metallic-Smoothness.png
+Assets/TextMesh Pro/Sprites/EmojiOne.png
+(350, 200) | (352, 200) Assets/TutorialInfo/Icons/URP.png
+Assets/!YaAssets/Leaderboard/Sprites/icon_ranking.png
+Assets/FXIFIED/common/Extras/FXified-logo.png
+Assets/FXIFIED/common/Extras/FXified-logo_02.png
+Assets/TextMesh Pro/Examples & Extras/Sprites/Default Sprites.png
+Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png
+(500, 357) | (500, 360) Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text UI Screenshot.png
+Assets/!YaAssets/Leaderboard/Sprites/panel/btn_close.png
+Assets/!YaAssets/Leaderboard/Sprites/panel/icon_player.png
+Assets/!YaAssets/Leaderboard/Sprites/panel/medal_1.png
+Assets/!YaAssets/Leaderboard/Sprites/panel/medal_2.png
+Assets/!YaAssets/Leaderboard/Sprites/panel/medal_3.png
+Assets/!YaAssets/Leaderboard/Sprites/panel/sub_player.png
+Assets/!YaAssets/Leaderboard/Sprites/panel/sub_players.png
+Assets/!YaAssets/Leaderboard/Sprites/panel/sub_points.png
+Assets/!YaAssets/Leaderboard/Sprites/panel/sub_points_player.png
+Assets/!YaAssets/Leaderboard/Sprites/panel/substrate.png
+Assets/!YaAssets/Leaderboard/Sprites/panel/substrate_text.png
+Assets/Creatures/Characters/Dog Bark Cute Series/Textures/Dog Bark Emission.png
+Assets/Creatures/Characters/Dog Bark Cute Series/Textures/Dog Bark.psd.png
+Assets/Creatures/Characters/Icicle Cute Series/Textures/FX Snow.png
+Assets/Creatures/Characters/Icicle Cute Series/Textures/Icicle Emission.png
+Assets/Creatures/Characters/Icicle Cute Series/Textures/Icicle.png
+Assets/Creatures/Characters/Phantom Cute Series/Textures/Phantom Emission.png
+Assets/Creatures/Characters/Phantom Cute Series/Textures/Phantom.png
+Assets/Creatures/Characters/Soul Mage Cute Series/Textures/Soul Mage Emission.png
+Assets/Creatures/Characters/Soul Mage Cute Series/Textures/Soul Mage.png
+Assets/Creatures/Enemies/Angel Mage Cute Series/Textures/Angel Mage Emission.png
+Assets/Creatures/Enemies/Angel Mage Cute Series/Textures/Angel Mage.png
+Assets/Creatures/Enemies/Angel Mage Cute Series/Textures/FX Circle.png
+Assets/Creatures/Enemies/Bumble Cute Series/Textures/Bumble.png
+Assets/Creatures/Enemies/Cacti Cute Series/Textures/Cacti.png
+Assets/Creatures/Enemies/Flower Pot Monster Cute Series/Textures/Flower Pot Monster.png
+Assets/Creatures/Enemies/Ghost Cute Series/Textures/Ghost.png
+Assets/Creatures/Enemies/Hermit King Cute Series/Textures/Hermit King.png
+Assets/Creatures/Enemies/Shell Cute Series/Textures/Shell.png
+Assets/Creatures/Enemies/Skeleton Cute Series/Textures/Skeleton.png
+Assets/Creatures/Enemies/Skeleton Mage Cute Series/Textures/Skeleton Mage Emission.png
+Assets/Creatures/Enemies/Skeleton Mage Cute Series/Textures/Skeleton Mage.png
+Assets/Creatures/Enemies/Spider Cute Series/Textures/Spider Emission.png
+Assets/Creatures/Enemies/Spider Cute Series/Textures/Spider.png
+Assets/Creatures/Enemies/Spider King Cute Series/Textures/Spider King Emission.png
+Assets/Creatures/Enemies/Spider King Cute Series/Textures/Spider King.png
+Assets/Creatures/Enemies/Spook Cute Series/Textures/Spook Emission.png
+Assets/Creatures/Enemies/Spook Cute Series/Textures/Spook.png
+Assets/Creatures/Enemies/Vampire Bat Cute Series/Textures/Vampire Bat Emission.png
+Assets/Creatures/Enemies/Vampire Bat Cute Series/Textures/Vampire Bat.png
+Assets/Creatures/Enemies/Werewolf Cute Series/Textures/Werewolf Emission.png
+Assets/Creatures/Enemies/Werewolf Cute Series/Textures/Werewolf.png
+Assets/FXIFIED/Stylized VFX Free Pack/Scenes/Lightmap/Lightmap-0_comp_dir.png
+Assets/YandexGame/ScriptsYG/Editor/Icons/Ad.png
+Assets/YandexGame/ScriptsYG/Editor/Icons/Icon_DebuggingYG.png
+Assets/YandexGame/ScriptsYG/Editor/Icons/Icon_GetPlayerYG.png
+Assets/YandexGame/ScriptsYG/Editor/Icons/Icon_ImageLoadYG.png
+Assets/YandexGame/ScriptsYG/Editor/Icons/Icon_InfoYG.png
+Assets/YandexGame/ScriptsYG/Editor/Icons/Icon_LanguageYG.png
+Assets/YandexGame/ScriptsYG/Editor/Icons/Icon_LeaderboardYG.png
+Assets/YandexGame/ScriptsYG/Editor/Icons/Icon_PaymentsYG.png
+Assets/YandexGame/ScriptsYG/Editor/Icons/Icon_PromptYG.png
+Assets/YandexGame/ScriptsYG/Editor/Icons/Icon_ReviewYG.png
+Assets/YandexGame/ScriptsYG/Editor/Icons/Icon_ScriptYG.png
+Assets/YandexGame/ScriptsYG/Editor/Icons/Icon_ViewingAdsYG.png
+Assets/YandexGame/ScriptsYG/Editor/Icons/Icon_YandexGame.png
+Assets/!YaAssets/Leaderboard/Sprites/panel/white/sub_players.png
+Assets/!YaAssets/Leaderboard/Sprites/panel/white/sub_players_frame.png
+Assets/!YaAssets/Leaderboard/Sprites/panel/white/sub_points.png
+Assets/!YaAssets/Leaderboard/Sprites/panel/white/substrate_text.png
+Assets/Creatures/Characters/Cat Evolution/Cat Bolt Cute Series/Textures/Cat Bolt Emission.psd.png
+Assets/Creatures/Characters/Cat Evolution/Cat Bolt Cute Series/Textures/Cat Bolt.png
+Assets/Creatures/Characters/Cat Evolution/Cat Lightning Cute Series/Textures/Cat Lightning Emission.png
+Assets/Creatures/Characters/Cat Evolution/Cat Lightning Cute Series/Textures/Cat Lightning.psd.png
+Assets/Creatures/Characters/Death Evolution/Death Mage Cute Series/Textures/Death Mage Emission.png
+Assets/Creatures/Characters/Death Evolution/Death Mage Cute Series/Textures/Death Mage.png
+Assets/Creatures/Characters/Death Evolution/Death Mage Cute Series/Textures/FX Circle.png
+Assets/Creatures/Characters/Death Evolution/Death Mage Cute Series/Textures/FX Smoke.png
+Assets/Creatures/Characters/Death Evolution/Nightmare Cute Series/Textures/FX Circle.png
+Assets/Creatures/Characters/Death Evolution/Nightmare Cute Series/Textures/FX Smoke.png
+Assets/Creatures/Characters/Death Evolution/Nightmare Cute Series/Textures/Nightmare Emission.png
+Assets/Creatures/Characters/Death Evolution/Nightmare Cute Series/Textures/Nightmare.png
+Assets/Creatures/Characters/Dragons Evolution/Dragon Fire Cute Series/Textures/Dragon Inferno.png
+Assets/Creatures/Characters/Dragons Evolution/Dragon Nightfall Cute Series/Textures/Dragon Nightfall Emission.png
+Assets/Creatures/Characters/Dragons Evolution/Dragon Nightfall Cute Series/Textures/Dragon Nightfall.png
+Assets/Creatures/Characters/FireEvolution/Fire Cute Series/Textures/FX Spark.png
+Assets/Creatures/Characters/FireEvolution/Fire Cute Series/Textures/Fire Emission.png
+Assets/Creatures/Characters/FireEvolution/Fire Cute Series/Textures/Fire.psd.png
+Assets/Creatures/Characters/FireEvolution/Flame Cute Series/Textures/FX Spark.png
+Assets/Creatures/Characters/FireEvolution/Flame Cute Series/Textures/Flame Emission.png
+Assets/Creatures/Characters/FireEvolution/Flame Cute Series/Textures/Flame.png
+Assets/Creatures/Characters/Shadow Evolution/Egg Cute Series/Textures/Egg Emission.png
+Assets/Creatures/Characters/Shadow Evolution/Egg Cute Series/Textures/Egg.png
+Assets/Creatures/Characters/Shadow Evolution/Shade Cute Series/Textures/Shade Emission.png
+Assets/Creatures/Characters/Shadow Evolution/Shade Cute Series/Textures/Shade.psd.png
+Assets/Creatures/Characters/Shadow Evolution/Shadow Cute Series/Textures/Shadow Emission.png
+Assets/Creatures/Characters/Shadow Evolution/Shadow Cute Series/Textures/Shadow.png
+Assets/Creatures/Characters/Spider Evolution/Creeper Cute Series/Textures/Creeper.png
+Assets/Creatures/Characters/Spider Evolution/Spider Toxin Cute Series/Textures/Spider Toxin Emission.png
+Assets/Creatures/Characters/Spider Evolution/Spider Toxin Cute Series/Textures/Spider Toxin.png
+(93, 18) | (96, 20) Assets/Plugins/Demigiant/DOTween/Editor/Imgs/DOTweenIcon.png
+(9, 9) | (12, 12) Assets/Plugins/Demigiant/DOTween/Editor/Imgs/DOTweenMiniIcon.png
+(194, 24) | (196, 24) Assets/Plugins/Demigiant/DOTween/Editor/Imgs/Footer.png
+(194, 24) | (196, 24) Assets/Plugins/Demigiant/DOTween/Editor/Imgs/Footer_dark.png
+Assets/TextMesh Pro/Examples & Extras/Sprites/DropCap Numbers.psd
+Assets/TextMesh Pro/Examples & Extras/Textures/Mask Zig-n-Zag.psd
+Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Circle.psd
+Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Diagonal.psd
+Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Double.psd
+Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Quad.psd
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_PowerUp_Atlas.psd
+Assets/Alien_planet/Effects/Glow.tga
+Assets/Alien_planet/Effects/Jets.tga
+Assets/Alien_planet/Effects/Rain.tga
+Assets/Alien_planet/Effects/dust.tga
+Assets/Alien_planet/Effects/snow.tga
+Assets/Alien_planet/Textures/color_swatch.tga
+Assets/Alien_planet/Textures/Skies/Dry_sky.tga
+Assets/Alien_planet/Textures/Skies/Dry_sky_side.tga
+Assets/Alien_planet/Textures/Skies/Dry_sky_top.tga
+Assets/Alien_planet/Textures/Skies/Gas_sky.tga
+Assets/Alien_planet/Textures/Skies/Gas_sky_bottom.tga
+Assets/Alien_planet/Textures/Skies/Gas_sky_top.tga
+Assets/Alien_planet/Textures/Skies/Ice_sky.tga
+Assets/Alien_planet/Textures/Skies/Ice_sky_bottom.tga
+Assets/Alien_planet/Textures/Skies/Ice_sky_side.tga
+Assets/Alien_planet/Textures/Skies/Ice_sky_top.tga
+Assets/Alien_planet/Textures/Skies/dry_sky_bottom.tga
+Assets/Alien_planet/Textures/Skies/lush_sky.tga
+Assets/Alien_planet/Textures/Skies/lush_sky_bottom.tga
+Assets/Alien_planet/Textures/Skies/lush_sky_side.tga
+Assets/Alien_planet/Textures/Skies/lush_sky_top.tga
+Assets/FXIFIED/common/Extras/T_Grid.tga
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_Ring_AB.tga
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Cloud_AA.tga
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Cross_AB.tga
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Decal_AC.tga
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Ember_AA.tga
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Ember_AB.tga
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Ember_AC.tga
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Ember_AE.tga
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Ember_AF.tga
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Ring_AA.tga
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Ring_AC.tga
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Skull_AA.tga
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Star_AA.tga
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Wave_AA.tga
+Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Wave_AC.tga
+---------------------------------------
+Textures optimization finished at 7/18/2024 3:43:39 PM
+163 files has been optimized.
+
+
