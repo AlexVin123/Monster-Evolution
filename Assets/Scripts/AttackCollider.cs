@@ -58,6 +58,9 @@ public class AttackCollider : MonoBehaviour
 
     public void OnEnemyDie()
     {
-        _exp.AddExp(_enemy.Exp);
+        if (_exp != null)
+        {
+            _exp.AddExp(_enemy.Exp);
+        }
     }
 }

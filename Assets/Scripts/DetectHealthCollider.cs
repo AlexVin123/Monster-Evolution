@@ -6,37 +6,39 @@ using UnityEngine.Events;
 
 public class DetectHealthCollider : MonoBehaviour
 {
-    public event UnityAction<Health> DetectPlayer;
-    public event UnityAction NoPlayer;
-    [SerializeField]private Health _health;
+    public event UnityAction<Health> DetectHealth;
+    public event UnityAction NoHealth;
+    [SerializeField] private Health _health;
 
-    public Health Health => _health;   
+    public Health Health => _health;
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.TryGetComponent(out Health health))
+        if (other.TryGetComponent(out Health health))
         {
             _health = health;
-            DetectPlayer?.Invoke(health);
+            DetectHealth?.Invoke(health);
             _health.HealthEnd += OnPlayerDie;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.TryGetComponent(out Health player))
+        if (other.TryGetComponent(out Health health))
         {
-            NoPlayer?.Invoke();
-            _health.HealthEnd -= OnPlayerDie;
+            NoHealth?.Invoke();
+            if (_health != null)
+                _health.HealthEnd -= OnPlayerDie;
             _health = null;
         }
     }
 
     public void OnPlayerDie()
     {
-        NoPlayer?.Invoke();
+        NoHealth?.Invoke();
         if(_health != null)
         _health.HealthEnd -= OnPlayerDie;
+        _health = null;
 
     }
 }

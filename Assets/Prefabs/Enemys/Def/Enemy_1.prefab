@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 7725355291162125417}
   - component: {fileID: 3911086633818897186}
   - component: {fileID: 1346875485906872909}
+  - component: {fileID: 1200718743107201841}
   m_Layer: 0
   m_Name: Enemy_1
   m_TagString: Untagged
@@ -449,6 +450,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbba499a7666aed4685133162ef41e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1200718743107201841
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6405456217842667211}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6483398324025379656
 GameObject:
   m_ObjectHideFlags: 0

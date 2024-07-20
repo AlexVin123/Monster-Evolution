@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackEnemy : Enemy
+public class AttackEnemy : Enemy, IEnemy
 {
     [SerializeField] private DetectHealthCollider _detecter;
     [SerializeField] private AttackCollider _attacker;
@@ -23,15 +23,15 @@ public class AttackEnemy : Enemy
     protected override void OnEnable()
     {
         base.OnEnable();
-        _detecter.DetectPlayer += OnPlayerDetect;
-        _detecter.NoPlayer += OnNoPlayer;
+        _detecter.DetectHealth += OnPlayerDetect;
+        _detecter.NoHealth += OnNoPlayer;
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
-        _detecter.DetectPlayer -= OnPlayerDetect;
-        _detecter.NoPlayer -= OnNoPlayer;
+        _detecter.DetectHealth -= OnPlayerDetect;
+        _detecter.NoHealth -= OnNoPlayer;
     }
 
     private void Update()

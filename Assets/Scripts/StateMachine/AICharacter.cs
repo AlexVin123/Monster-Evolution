@@ -20,14 +20,14 @@ public class AICharacter : MonoBehaviour, IEnemy
 
     public AttackCollider AttackCollider => _attackCollider;
 
-    public int Exp => _playerViews[_currentLvl - 1].PlayerData.Exp/5;
+    public int Exp => _playerViews[_currentLvl - 1].PlayerData.Exp / 5;
 
     public event Action<AICharacter> Died;
 
     public void Init(int lvl)
     {
         _currentLvl = lvl;
-        _attackCollider = _playerViews[lvl -1 ].AttackCollider;
+        _attackCollider = _playerViews[lvl - 1].AttackCollider;
         _attackCollider.Init(_playerViews[lvl - 1].PlayerData.Damage);
         _movement.OnModificationUpdate(_playerViews[lvl - 1].PlayerData.Speed);
         _health.Init(_playerViews[lvl - 1].PlayerData.Health, _playerViews[lvl - 1].PlayerData.Health);
@@ -36,8 +36,10 @@ public class AICharacter : MonoBehaviour, IEnemy
 
         ChaigeLvl(lvl);
 
-        if (_currentState == null)
-            _currentState = _firstState;
+        if (_currentState != null)
+            _currentState.Exit();
+
+        _currentState = _firstState;
 
         _currentState.Enter();
     }

@@ -10,7 +10,6 @@ using Button = UnityEngine.UI.Button;
 
 public class Exp : MonoBehaviour
 {
-    [SerializeField] private Button _expBooster;
     [SerializeField] private float _boostDuration = 15f;
     [SerializeField] private TextMeshProUGUI _addExp;
     [SerializeField] private Animator _textAnimator;
@@ -26,6 +25,8 @@ public class Exp : MonoBehaviour
 
     public event UnityAction<int> ChaigeLvl;
     public event UnityAction<int, int> ChaigeExp;
+    public event UnityAction BosterEnd;
+    public event UnityAction<float> BosterTaked;
 
     public int CurrentLvl => _currentLvl;
     public int CurrentExp => _currentExp;
@@ -35,7 +36,6 @@ public class Exp : MonoBehaviour
 
     private void Start()
     {
-        _expBooster.onClick.AddListener(OnExpBoosterClicked);
         _expRate = _originalExpRate;
     }
 
@@ -106,7 +106,7 @@ public class Exp : MonoBehaviour
         return (int)((float)_players[_players.Count - 1].PlayerData.Exp + ((float)_players[_players.Count - 1].PlayerData.Exp * (0.5 * (float)lvl)));
     }
 
-    private void OnExpBoosterClicked()
+    public void OnExpBoosterClicked()
     {
         YandexGame.RewVideoShow(onReward: OnAdvertisingOnComplete);
     }
@@ -119,17 +119,19 @@ public class Exp : MonoBehaviour
     private IEnumerator StartExpBoost()
     {
         _isBoostActive = true;
-        _expBooster.interactable = false;
+        //_expBooster.interactable = false;
         _expRate = _boostedExpRate;
 
         Debug.Log("Ваш буст составляет: " + _expRate);
+        BosterTaked?.Invoke(_boostDuration);
 
         yield return new WaitForSeconds(_boostDuration);
 
         _isBoostActive = false;
-        _expBooster.interactable = true;
+        //_expBooster.interactable = true;
 
         _expRate = _originalExpRate;
+        BosterEnd?.Invoke();
 
         Debug.Log("Ваш буст вернулся в норму: " + _expRate);
     }
