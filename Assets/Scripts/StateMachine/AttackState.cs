@@ -30,6 +30,7 @@ public class AttackState : State
         {
 
             yield return new WaitForSeconds(0.5f);
+            _chatacter.Animator.SetTrigger("Attack");
 
             if(_detectHealthCollider.Health != null)
             {

@@ -659,6 +659,7 @@ MonoBehaviour:
   _movement: {fileID: 14007906498226752}
   _agent: {fileID: 7903809433191804213}
   _radius: 20
+  _character: {fileID: 8116699592349989538}
 --- !u!114 &5438116401295563607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,6 +698,8 @@ MonoBehaviour:
   _randomTransition: 0
   _detectHealthCollider: {fileID: 1042079745967881719}
   _move: {fileID: 14007906498226752}
+  _agent: {fileID: 7903809433191804213}
+  _character: {fileID: 8116699592349989538}
 --- !u!114 &8002637089630421661
 MonoBehaviour:
   m_ObjectHideFlags: 0

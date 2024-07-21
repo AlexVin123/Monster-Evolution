@@ -17,6 +17,9 @@ public class AICharacter : MonoBehaviour, IEnemy
     private AttackCollider _attackCollider;
 
     private State _currentState;
+    private Animator _animator;
+
+    public Animator Animator => _animator;
 
     public AttackCollider AttackCollider => _attackCollider;
 
@@ -96,7 +99,7 @@ public class AICharacter : MonoBehaviour, IEnemy
             if (view.PlayerData.Lvl == lvl)
             {
                 view.gameObject.SetActive(true);
-                //_animator = view.Animator;
+                _animator = view.Animator;
             }
         }
     }

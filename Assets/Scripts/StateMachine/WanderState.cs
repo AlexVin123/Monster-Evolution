@@ -8,6 +8,7 @@ public class WanderState : State
     [SerializeField] private AIMovement _movement;
     [SerializeField] private NavMeshAgent _agent;
     [SerializeField] private float _radius;
+    [SerializeField] private AICharacter _character;
 
     private NavMeshPath _path;
 
@@ -30,6 +31,7 @@ public class WanderState : State
         while (true) 
         {
             Vector3 point = GetRandomPoint();
+            _character.Animator.SetFloat("MoveSpeed", _agent.speed);
             _movement.Move(point);
             yield return new WaitUntil(() => _movement.Completed == true);
         }

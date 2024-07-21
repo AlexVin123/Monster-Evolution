@@ -9,6 +9,7 @@ namespace Supercyan.FreeSample
         [SerializeField]private float m_moveSpeed = 10;
         [SerializeField] private float m_turnSpeed = 200;
         [SerializeField]private float m_jumpForce = 10;
+        [SerializeField] private LayerMask _mask;
 
 
         private Animator m_animator = null;
@@ -25,7 +26,7 @@ namespace Supercyan.FreeSample
         private float m_minJumpInterval = 0.25f;
         private bool m_jumpInput = false;
 
-        private bool m_isGrounded;
+        private bool m_isGrounded = true;
 
         private List<Collider> m_collisions = new List<Collider>();
 
@@ -48,60 +49,60 @@ namespace Supercyan.FreeSample
             m_jumpForce = forceJump;
         }
 
-        private void OnCollisionEnter(Collision collision)
-        {
-            ContactPoint[] contactPoints = collision.contacts;
-            for (int i = 0; i < contactPoints.Length; i++)
-            {
-                if (Vector3.Dot(contactPoints[i].normal, Vector3.up) > 0.1f)
-                {
-                    if (!m_collisions.Contains(collision.collider))
-                    {
-                        m_collisions.Add(collision.collider);
-                    }
-                    m_isGrounded = true;
-                }
-            }
-        }
+        //private void OnCollisionEnter(Collision collision)
+        //{
+        //    ContactPoint[] contactPoints = collision.contacts;
+        //    for (int i = 0; i < contactPoints.Length; i++)
+        //    {
+        //        if (Vector3.Dot(contactPoints[i].normal, Vector3.up) > 0.1f)
+        //        {
+        //            if (!m_collisions.Contains(collision.collider))
+        //            {
+        //                m_collisions.Add(collision.collider);
+        //            }
+        //            m_isGrounded = true;
+        //        }
+        //    }
+        //}
 
-        private void OnCollisionStay(Collision collision)
-        {
-            ContactPoint[] contactPoints = collision.contacts;
-            bool validSurfaceNormal = false;
-            for (int i = 0; i < contactPoints.Length; i++)
-            {
-                if (Vector3.Dot(contactPoints[i].normal, Vector3.up) > 0.1f)
-                {
-                    validSurfaceNormal = true; break;
-                }
-            }
+        //private void OnCollisionStay(Collision collision)
+        //{
+        //    ContactPoint[] contactPoints = collision.contacts;
+        //    bool validSurfaceNormal = false;
+        //    for (int i = 0; i < contactPoints.Length; i++)
+        //    {
+        //        if (Vector3.Dot(contactPoints[i].normal, Vector3.up) > 0.1f)
+        //        {
+        //            validSurfaceNormal = true; break;
+        //        }
+        //    }
 
-            if (validSurfaceNormal)
-            {
-                m_isGrounded = true;
-                if (!m_collisions.Contains(collision.collider))
-                {
-                    m_collisions.Add(collision.collider);
-                }
-            }
-            else
-            {
-                if (m_collisions.Contains(collision.collider))
-                {
-                    m_collisions.Remove(collision.collider);
-                }
-                if (m_collisions.Count == 0) { m_isGrounded = false; }
-            }
-        }
+        //    if (validSurfaceNormal)
+        //    {
+        //        m_isGrounded = true;
+        //        if (!m_collisions.Contains(collision.collider))
+        //        {
+        //            m_collisions.Add(collision.collider);
+        //        }
+        //    }
+        //    else
+        //    {
+        //        if (m_collisions.Contains(collision.collider))
+        //        {
+        //            m_collisions.Remove(collision.collider);
+        //        }
+        //        if (m_collisions.Count == 0) { m_isGrounded = false; }
+        //    }
+        //}
 
-        private void OnCollisionExit(Collision collision)
-        {
-            if (m_collisions.Contains(collision.collider))
-            {
-                m_collisions.Remove(collision.collider);
-            }
-            if (m_collisions.Count == 0) { m_isGrounded = false; }
-        }
+        //private void OnCollisionExit(Collision collision)
+        //{
+        //    if (m_collisions.Contains(collision.collider))
+        //    {
+        //        m_collisions.Remove(collision.collider);
+        //    }
+        //    if (m_collisions.Count == 0) { m_isGrounded = false; }
+        //}
 
         private void Update()
         {
@@ -115,9 +116,18 @@ namespace Supercyan.FreeSample
         {
             if (m_animator != null)
                 m_animator.SetBool("Grounded", m_isGrounded);
+            m_isGrounded = ReyCastDown(0.2f);
 
             DirectUpdate();
             m_jumpInput = false;
+        }
+
+        public bool ReyCastDown(float distanse)
+        {
+            Debug.DrawLine(transform.position,transform.position + -Vector3.up * distanse, Color.red, 2);
+            bool grounds = Physics.Raycast(transform.position, -Vector3.up, out RaycastHit hitInfo, distanse, _mask);
+            Debug.Log(hitInfo.collider);
+            return grounds;
         }
 
 
@@ -128,11 +138,11 @@ namespace Supercyan.FreeSample
 
             Transform camera = Camera.main.transform;
 
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                v *= m_walkScale;
-                h *= m_walkScale;
-            }
+            //if (Input.GetKey(KeyCode.LeftShift))
+            //{
+            //    v *= m_walkScale;
+            //    h *= m_walkScale;
+            //}
 
             m_currentV = Mathf.Lerp(m_currentV, v, Time.deltaTime * m_interpolation);
             m_currentH = Mathf.Lerp(m_currentH, h, Time.deltaTime * m_interpolation);
