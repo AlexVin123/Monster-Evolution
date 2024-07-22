@@ -27,8 +27,11 @@ public class AICharacter : MonoBehaviour, IEnemy
 
     public event Action<AICharacter> Died;
 
+    private Collider _collider;
+
     public void Init(int lvl)
     {
+        _collider = GetComponent<Collider>();
         _currentLvl = lvl;
         _attackCollider = _playerViews[lvl - 1].AttackCollider;
         _attackCollider.Init(_playerViews[lvl - 1].PlayerData.Damage);
@@ -106,8 +109,18 @@ public class AICharacter : MonoBehaviour, IEnemy
 
     public void Die()
     {
+        StartCoroutine(DieCorutine());
+    }
+
+    private IEnumerator DieCorutine()
+    {
+        _collider.enabled = false;
+        _animator.SetBool("Die", true);
         Died?.Invoke(this);
+        yield return new WaitForSeconds(2);
         _currentState = null;
         gameObject.SetActive(false);
+        _collider.enabled = true;
+        _animator.SetBool("Die", false);
     }
 }
