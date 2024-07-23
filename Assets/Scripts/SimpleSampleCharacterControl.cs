@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
+using YG;
 
 namespace Supercyan.FreeSample
 {
@@ -10,7 +12,9 @@ namespace Supercyan.FreeSample
         [SerializeField] private float m_turnSpeed = 200;
         [SerializeField]private float m_jumpForce = 10;
         [SerializeField] private LayerMask _mask;
+        [SerializeField] private VariableJoystick _variableJoystick;
 
+        private bool _isDesktop;
 
         private Animator m_animator = null;
         [SerializeField] private Rigidbody m_rigidBody = null;
@@ -35,6 +39,8 @@ namespace Supercyan.FreeSample
         private void Awake()
         {
             if (!m_rigidBody) { gameObject.GetComponent<Animator>(); }
+
+            _isDesktop = YandexGame.EnvironmentData.isDesktop;
         }
 
         public void Init(Animator animator)
@@ -133,8 +139,21 @@ namespace Supercyan.FreeSample
 
         private void DirectUpdate()
         {
-            float v = Input.GetAxis("Vertical");
-            float h = Input.GetAxis("Horizontal");
+            // float v = Input.GetAxis("Vertical");
+            // float h = Input.GetAxis("Horizontal");
+            
+            float v, h;
+            
+            if (_isDesktop)
+            {
+                v = Input.GetAxis("Vertical");
+                h = Input.GetAxis("Horizontal");
+            }
+            else
+            {
+                v = _variableJoystick.Vertical;
+                h = _variableJoystick.Horizontal;
+            }
 
             Transform camera = Camera.main.transform;
 
