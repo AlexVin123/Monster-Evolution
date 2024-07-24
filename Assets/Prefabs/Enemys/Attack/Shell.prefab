@@ -581,6 +581,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shell
       objectReference: {fileID: 0}
+    - target: {fileID: 3146993980571855920, guid: d3766de1435198c4883017b34308c28f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6027603638145217978, guid: d3766de1435198c4883017b34308c28f,
         type: 3}
       propertyPath: m_LocalPosition.x
