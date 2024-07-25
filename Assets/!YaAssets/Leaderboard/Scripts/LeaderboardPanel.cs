@@ -24,7 +24,7 @@ namespace YaAssets
         private Coroutine _showItemCoroutine;
         private bool _isHide;
         private string _playerID;
-        private readonly string _lbName = "Leaderboard";
+        private readonly string _lbName = "PlayerLevel"; //YG LeaderBoard Name on console
 
         private void Awake() => Instance = this;
 
