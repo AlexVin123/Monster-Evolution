@@ -12,10 +12,11 @@ public class Attack : MonoBehaviour
     private AttackCollider _attackCollider;
     [SerializeField] private float _timeAttack = 0.1f;
     private Animator _animator;
-    private Coroutine _attackCorutine;
+    private Coroutine _attackCoroutine;
     private WaitForSeconds _delay;
 
     [SerializeField] private Button _buttonAttack;
+
     private bool _isDesktop;
 
     private void Awake()
@@ -28,6 +29,10 @@ public class Attack : MonoBehaviour
             {
                 _buttonAttack.onClick.AddListener(OnAttackButtonPressed);
             }
+        }
+        else
+        {
+            _buttonAttack.gameObject.SetActive(false);
         }
     }
 
@@ -61,10 +66,10 @@ public class Attack : MonoBehaviour
     
     private void TriggerAttack()
     {
-        if (_attackCorutine == null)
+        if (_attackCoroutine == null)
         {
             _animator.SetTrigger("Attack");
-            _attackCorutine = StartCoroutine(TakeDamage());
+            _attackCoroutine = StartCoroutine(TakeDamage());
         }
     }
 
@@ -73,6 +78,6 @@ public class Attack : MonoBehaviour
         _attackCollider.gameObject.SetActive(true);
         yield return _delay;
         _attackCollider.gameObject.SetActive(false);
-        _attackCorutine = null;
+        _attackCoroutine = null;
     }
 }

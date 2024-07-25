@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 using YG;
 
 namespace Supercyan.FreeSample
@@ -13,6 +14,7 @@ namespace Supercyan.FreeSample
         [SerializeField]private float m_jumpForce = 10;
         [SerializeField] private LayerMask _mask;
         [SerializeField] private VariableJoystick _variableJoystick;
+        [SerializeField] private Button _buttonJump;
 
         private bool _isDesktop;
 
@@ -41,6 +43,19 @@ namespace Supercyan.FreeSample
             if (!m_rigidBody) { gameObject.GetComponent<Animator>(); }
 
             _isDesktop = YandexGame.EnvironmentData.isDesktop;
+
+            if (_isDesktop)
+            {
+                _variableJoystick.gameObject.SetActive(false);
+                _buttonJump.gameObject.SetActive(false);
+            }
+            else
+            {
+                if (_buttonJump != null)
+                {
+                    _buttonJump.onClick.AddListener(OnJumpButtonPressed);
+                }
+            }
         }
 
         public void Init(Animator animator)
@@ -112,9 +127,12 @@ namespace Supercyan.FreeSample
 
         private void Update()
         {
-            if (!m_jumpInput && Input.GetKey(KeyCode.Space))
+            if (_isDesktop)
             {
-                m_jumpInput = true;
+                if (!m_jumpInput && Input.GetKey(KeyCode.Space))
+                {
+                    m_jumpInput = true;
+                }
             }
         }
 
@@ -135,7 +153,6 @@ namespace Supercyan.FreeSample
             Debug.Log(hitInfo.collider);
             return grounds;
         }
-
 
         private void DirectUpdate()
         {
@@ -181,18 +198,27 @@ namespace Supercyan.FreeSample
                 if (m_animator != null)
                     m_animator.SetFloat("MoveSpeed", direction.magnitude);
             }
-
-            JumpingAndLanding();
+            
+            if (m_jumpInput)
+            {
+                PerformJump();
+            }
         }
-
-        private void JumpingAndLanding()
+        
+        private void OnJumpButtonPressed()
+        {
+            m_jumpInput = true;
+        }
+        
+        private void PerformJump()
         {
             bool jumpCooldownOver = (Time.time - m_jumpTimeStamp) >= m_minJumpInterval;
 
-            if (jumpCooldownOver && m_isGrounded && m_jumpInput)
+            if (jumpCooldownOver && m_isGrounded)
             {
                 m_jumpTimeStamp = Time.time;
                 m_rigidBody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
+                m_jumpInput = false;
             }
         }
     }
