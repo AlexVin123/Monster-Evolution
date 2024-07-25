@@ -93,6 +93,8 @@ public class Exp : MonoBehaviour
         PlayerPrefs.SetInt("Lvl", _currentLvl);
         _maxExp = LvlToMaxExp(_currentLvl);
         ChaigeLvl.Invoke(_currentLvl);
+        
+        YandexGame.NewLeaderboardScores("PlayerLevel", _currentLvl);
     }
 
     public int LvlToMaxExp(int lvl)
