@@ -59,7 +59,7 @@ public class PlayerStats : MonoBehaviour
 
     private void OnChaigeLvl(int lvl)
     {
-        _lvl.text = Localization.GetText("Level") + lvl;
+        _lvl.text = lvl.ToString();
 
         foreach (var player in _player)
         {
