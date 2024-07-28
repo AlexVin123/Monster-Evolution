@@ -4,12 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using YG;
+using TMPro;
 
 public class LoseWindow : Window
 {
     [SerializeField] private GameObject _root;
     [SerializeField] private Button _buttonRevival;
     [SerializeField] private Button _buttonRewardRevival;
+    [SerializeField] private TextMeshProUGUI _deletedExp;
+    [SerializeField] private Player _player;
 
     public event UnityAction Revival;
     public event UnityAction RewardRevival;
@@ -48,6 +51,7 @@ public class LoseWindow : Window
     public override void Open()
     {
         base.Open();
+        _deletedExp.text = "-" + _player.ShowRemoveExp();
         _root.SetActive(true);
     }
 

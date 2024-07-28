@@ -166,7 +166,6 @@ namespace Supercyan.FreeSample
         {
             Debug.DrawLine(transform.position,transform.position + -Vector3.up * distanse, Color.red, 2);
             bool grounds = Physics.Raycast(transform.position, -Vector3.up, out RaycastHit hitInfo, distanse, _mask);
-            Debug.Log(hitInfo.collider);
             return grounds;
         }
 

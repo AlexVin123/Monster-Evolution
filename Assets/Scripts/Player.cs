@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     [SerializeField] private ParticleSystem _upLvlFx;
     private Animator _animator;
     [SerializeField] private float _timeDie;
-    [SerializeField][Range(0, 100)] private int _modificatorRemoveExp;
+    [SerializeField][Range(0, 1)] private float _modificatorRemoveExp = 0.15f;
 
     private Attack _attack;
     private Health _health;
@@ -170,7 +170,7 @@ public class Player : MonoBehaviour
     {
         InitHealth();
         _animator.SetBool("Die", false);
-        int removeExp = (int)Mathf.Lerp(0f, (float)_exp.CurrentExp, _modificatorRemoveExp);
+        int removeExp = (int)(_exp.CurrentExp * _modificatorRemoveExp);
         Debug.Log("RemoveExp " + removeExp);
         _exp.RemoveExp(removeExp);
         transform.position = _startPoint;
@@ -184,5 +184,11 @@ public class Player : MonoBehaviour
         _animator.SetBool("Die", false);
         transform.position = _startPoint;
         _characterControl.enabled = true;
+    }
+
+    public int ShowRemoveExp()
+    {
+        Debug.Log("CurrentExp:" + _exp.CurrentExp + "Modificator:" + _modificatorRemoveExp + "Value:" + (int)(_exp.CurrentExp * _modificatorRemoveExp));
+        return (int)(_exp.CurrentExp * _modificatorRemoveExp);
     }
 }
