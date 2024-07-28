@@ -13,6 +13,7 @@ public class Health : MonoBehaviour
 
     public bool NoHealth => _health <= 0;
 
+    public int MaxHealth => _maxHealth;
     public void Init(int maxHealth, int health)
     {
         if (maxHealth > 0)

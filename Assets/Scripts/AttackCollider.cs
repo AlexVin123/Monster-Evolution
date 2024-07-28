@@ -5,6 +5,7 @@ using UnityEngine;
 public class AttackCollider : MonoBehaviour
 {
     [SerializeField] private Exp _exp;
+    [SerializeField] private Health _healthPlayer;
     [SerializeField] private Animator _attackTrAnim;
     bool _attaced = false;
     private IEnemy _enemy;
@@ -61,6 +62,17 @@ public class AttackCollider : MonoBehaviour
         if (_exp != null)
         {
             _exp.AddExp(_enemy.Exp);
+        }
+
+        if(_healthPlayer != null)
+        {
+            int value = Random.Range(0, 100);
+
+            if(value <= 25)
+            {
+                int AddHealth = (int)(_healthPlayer.MaxHealth * 0.2f);
+                _healthPlayer.AddHealth(AddHealth);
+            }
         }
     }
 }

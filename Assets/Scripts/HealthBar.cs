@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] private Health _health;
-    [SerializeField] private Image _bar;
+    [SerializeField] private Slider _bar;
+    [SerializeField] private TextMeshProUGUI _text;
 
 
     private void OnEnable()
@@ -20,6 +22,7 @@ public class HealthBar : MonoBehaviour
     }
     private void OnChaigeHealth(int maxHealth, int healt)
     {
-        _bar.fillAmount = (float)healt / (float)maxHealth;
+        _text.text = healt + "/" + maxHealth;
+        _bar.value = (float)healt / (float)maxHealth;
     }
 }

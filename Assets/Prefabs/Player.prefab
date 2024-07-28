@@ -542,7 +542,7 @@ MonoBehaviour:
   _rootAnimator: {fileID: 8866055817071759170}
   _upLvlFx: {fileID: 5772345852933297814}
   _timeDie: 3
-  _modificatorRemoveExp: 90
+  _modificatorRemoveExp: 1
 --- !u!114 &5669899940412695397
 MonoBehaviour:
   m_ObjectHideFlags: 0
