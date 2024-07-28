@@ -34,6 +34,10 @@ public class Attack : MonoBehaviour
                 _buttonAttack.gameObject.SetActive(false);
             }
         }
+        else
+        {
+            _buttonAttack.gameObject.SetActive(false);
+        }
 
     }
 
