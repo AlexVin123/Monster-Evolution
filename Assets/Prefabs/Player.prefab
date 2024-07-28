@@ -491,6 +491,12 @@ MonoBehaviour:
   m_moveSpeed: 10
   m_turnSpeed: 50
   m_jumpForce: 10
+  _mask:
+    serializedVersion: 2
+    m_Bits: 1
+  _variableJoystick: {fileID: 0}
+  _buttonJump: {fileID: 0}
+  _singleMode: 1
   m_rigidBody: {fileID: 1873198767556058794}
 --- !u!114 &5123432108702402130
 MonoBehaviour:
@@ -549,7 +555,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763a754d21cb1624f947af662b88eb26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _expBooster: {fileID: 0}
   _boostDuration: 15
   _addExp: {fileID: 0}
   _textAnimator: {fileID: 0}
@@ -566,6 +571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeAttack: 0.5
+  _buttonAttack: {fileID: 0}
 --- !u!1001 &687353967306527386
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ namespace Supercyan.FreeSample
         [SerializeField] private LayerMask _mask;
         [SerializeField] private VariableJoystick _variableJoystick;
         [SerializeField] private Button _buttonJump;
+        [SerializeField] private bool _singleMode = true;
 
         private bool _isDesktop;
 
@@ -43,19 +44,26 @@ namespace Supercyan.FreeSample
             if (!m_rigidBody) { gameObject.GetComponent<Animator>(); }
 
             _isDesktop = YandexGame.EnvironmentData.isDesktop;
-
-            if (_isDesktop)
+            if(_singleMode == false)
             {
-                _variableJoystick.gameObject.SetActive(false);
-                _buttonJump.gameObject.SetActive(false);
+                if (_isDesktop)
+                {
+                    _variableJoystick.gameObject.SetActive(false);
+                    _buttonJump.gameObject.SetActive(false);
+                }
+                else
+                {
+                    if (_buttonJump != null)
+                    {
+                        _buttonJump.onClick.AddListener(OnJumpButtonPressed);
+                    }
+                }
             }
             else
             {
-                if (_buttonJump != null)
-                {
-                    _buttonJump.onClick.AddListener(OnJumpButtonPressed);
-                }
+                m_isGrounded = false;
             }
+
         }
 
         public void Init(Animator animator)
@@ -66,8 +74,8 @@ namespace Supercyan.FreeSample
 
         public void Upgrade(float speed, float forceJump)
         {
-            m_moveSpeed = speed;
-            m_jumpForce = forceJump;
+                m_moveSpeed = speed;
+                m_jumpForce = forceJump;
         }
 
         //private void OnCollisionEnter(Collision collision)
@@ -128,6 +136,14 @@ namespace Supercyan.FreeSample
         private void Update()
         {
             if (_isDesktop)
+            {
+                if (!m_jumpInput && Input.GetKey(KeyCode.Space))
+                {
+                    m_jumpInput = true;
+                }
+            }
+
+            if (_singleMode)
             {
                 if (!m_jumpInput && Input.GetKey(KeyCode.Space))
                 {
