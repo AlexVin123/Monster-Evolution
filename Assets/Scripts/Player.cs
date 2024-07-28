@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private List<PlayerView> _playerViews;
     [SerializeField] private Animator _rootAnimator;
+    [SerializeField] private AudioSource _audioSource;
     [SerializeField] private ParticleSystem _upLvlFx;
     private Animator _animator;
     [SerializeField] private float _timeDie;
@@ -24,6 +25,8 @@ public class Player : MonoBehaviour
     public bool dying { get; private set; }
 
     public event UnityAction Die;
+
+    private bool _isFirst = true;
 
     public void Init()
     {
@@ -70,11 +73,20 @@ public class Player : MonoBehaviour
     {
         bool activeView = false;
 
-        if (_rootAnimator != null)
-            _rootAnimator.SetTrigger("UpLvl");
+        if(_isFirst == false)
+        {
+            if (_rootAnimator != null)
+                _rootAnimator.SetTrigger("UpLvl");
 
-        if (_upLvlFx != null)
-            _upLvlFx.Play();
+            if (_audioSource != null)
+                _audioSource.Play();
+
+            if (_upLvlFx != null)
+                _upLvlFx.Play();
+        }
+
+        _isFirst = false;
+
 
         foreach (PlayerView view in _playerViews)
         {

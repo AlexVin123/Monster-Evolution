@@ -13,6 +13,7 @@ public class Exp : MonoBehaviour
     [SerializeField] private float _boostDuration = 15f;
     [SerializeField] private TextMeshProUGUI _addExp;
     [SerializeField] private Animator _textAnimator;
+    [SerializeField] private AudioSource _audioSource;
     private bool _isBoostActive = false;
     private int _expRate;
     private int _originalExpRate = 1;
@@ -66,6 +67,9 @@ public class Exp : MonoBehaviour
         if (_textAnimator != null)
             _textAnimator.SetTrigger("AddExp");
 
+        if (_audioSource != null)
+            _audioSource.Play();
+
         _currentExp += exp * _expRate;
 
         if (_currentExp >= _maxExp)
@@ -93,7 +97,7 @@ public class Exp : MonoBehaviour
         PlayerPrefs.SetInt("Lvl", _currentLvl);
         _maxExp = LvlToMaxExp(_currentLvl);
         ChaigeLvl.Invoke(_currentLvl);
-        
+
         YandexGame.NewLeaderboardScores("PlayerLevel", _currentLvl);
     }
 
